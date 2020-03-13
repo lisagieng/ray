@@ -5,3 +5,32 @@
 .logo {
   width: 70%;
 }
+
+/* NAVBAR TINGZ */
+.nav {
+  background-color: #70965f;
+}
+
+/* Adding border */
+.nav-item {
+  border: 1px solid white;
+  border-left: 0px;
+}
+
+.nav-item:last-child {
+  border-right: 0px;
+}
+
+/* Text to white */
+.nav > li > a {
+  color: white;
+}
+
+.active-pill, .dropdown:hover, .my-button:hover {
+  background-color: #84b570;
+}
+
+/*.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+*/
