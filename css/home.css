@@ -1,7 +1,3 @@
-.wrapper {
-  background-color: #f7f5f2;
-}
-
 .logo {
   width: 70%;
 }
@@ -30,7 +26,10 @@
   background-color: #84b570;
 }
 
-/*.dropdown:hover > .dropdown-menu {
-  display: block;
+/* Overriding some Bootstrap defaults for better aesthetics */
+.dropdown > .dropdown-menu {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  //border: 0.5px solid grey;
 }
-*/
