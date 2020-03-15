@@ -22,7 +22,7 @@
   color: white;
 }
 
-.active-pill, .dropdown:hover, .my-button:hover {
+.dropdown:hover, .my-button:hover {
   background-color: #84b570;
 }
 
