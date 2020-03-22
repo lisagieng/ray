@@ -1,0 +1,6 @@
+Some website standards:
+
+- Please include the css/index.css file in every html file
+	+ Use <body class="wrapper"> to instantiate the website standard wrapper
+- Headers for sections will be sized h3
+- Use <p> for content
