@@ -2,6 +2,14 @@
   width: 70%;
 }
 
+.bg-alt {
+  background-color: rgba(195,217,163,0.3);
+}
+
+.givemespace {
+  padding: 20px;
+}
+
 /* NAVBAR TINGZ */
 .nav {
   background-color: #70965f;
