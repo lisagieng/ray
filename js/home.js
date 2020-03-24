@@ -14,3 +14,24 @@ function toggleDropdown (e) {
 $('body')
   .on('mouseenter mouseleave','.dropdown',toggleDropdown)
   .on('click', '.dropdown-menu a', toggleDropdown);
+
+// Feed loader
+google.load("feeds", "1");
+
+   function initialize() {
+     var feed = new google.feeds.Feed("https://www.sciencedaily.com/rss/top/environment.xml");
+     feed.load(function(result) {
+       document.getElementById("feedControl").style.visibility = "hidden";
+       if (!result.error) {
+         var container = document.getElementById("feed");
+         for (var i = 0; i < result.feed.entries.length; i++) {
+           var entry = result.feed.entries[i];
+           var div = document.createElement("div");
+           div.innerHTML = "<a target='_blank' href='" + entry.link + "'>" + entry.title + "</a><p>" + entry.description + "</p>";
+           var desc = document.createTextNode(entry.description);
+           container.appendChild(div);
+         }
+       }
+     });
+   }
+   google.setOnLoadCallback(initialize);

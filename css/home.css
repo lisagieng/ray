@@ -10,6 +10,10 @@
   padding: 20px;
 }
 
+.title h3 {
+  display:inline;
+}
+
 /* NAVBAR TINGZ */
 .nav {
   background-color: #70965f;
