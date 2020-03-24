@@ -15,7 +15,8 @@ $('body')
   .on('mouseenter mouseleave','.dropdown',toggleDropdown)
   .on('click', '.dropdown-menu a', toggleDropdown);
 
-// News Feed loader
+// News Feed loader API
+// https://rss2json.com/google-feed-api-alternative
 google.load("feeds", "1");
 
    function initialize() {
@@ -28,7 +29,7 @@ google.load("feeds", "1");
            var entry = result.feed.entries[i];
            var div = document.createElement("div");
            var readmore = "<a target='_blank' href='" + entry.link + "'><small>  Read more.</small></a>"
-           div.innerHTML = "<a target='_blank' href='" + entry.link + "'>" + entry.title + "</a><p>" + entry.content + readmore + "</p><hr>";
+           div.innerHTML = "<a target='_blank' href='" + entry.link + "'>" + entry.title + "</a><small> " + entry.publishedDate + "</small><p>" + entry.content + readmore + "</p><hr>";
            container.appendChild(div);
          }
        }
