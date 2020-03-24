@@ -6,12 +6,15 @@
   background-color: rgba(195,217,163,0.3);
 }
 
-.givemespace {
-  padding: 20px;
-}
-
 .title h3 {
   display:inline;
+}
+
+/* for news box */
+.news {
+  width: auto;
+  height: 300px;
+  overflow: auto;
 }
 
 /* NAVBAR TINGZ */

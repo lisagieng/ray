@@ -15,7 +15,7 @@ $('body')
   .on('mouseenter mouseleave','.dropdown',toggleDropdown)
   .on('click', '.dropdown-menu a', toggleDropdown);
 
-// Feed loader
+// News Feed loader
 google.load("feeds", "1");
 
    function initialize() {
@@ -27,8 +27,8 @@ google.load("feeds", "1");
          for (var i = 0; i < result.feed.entries.length; i++) {
            var entry = result.feed.entries[i];
            var div = document.createElement("div");
-           div.innerHTML = "<a target='_blank' href='" + entry.link + "'>" + entry.title + "</a><p>" + entry.description + "</p>";
-           var desc = document.createTextNode(entry.description);
+           var readmore = "<a target='_blank' href='" + entry.link + "'><small>  Read more.</small></a>"
+           div.innerHTML = "<a target='_blank' href='" + entry.link + "'>" + entry.title + "</a><p>" + entry.content + readmore + "</p><hr>";
            container.appendChild(div);
          }
        }
