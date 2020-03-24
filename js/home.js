@@ -14,3 +14,12 @@ function toggleDropdown (e) {
 $('body')
   .on('mouseenter mouseleave','.dropdown',toggleDropdown)
   .on('click', '.dropdown-menu a', toggleDropdown);
+
+// Google Feed API
+  function load() {
+  var feed ="https://www.sciencedaily.com/rss/top/environment.xml";
+  new GFdynamicFeedControl(feed, "feedControl");
+
+  }
+  google.load("feeds", "1");
+  google.setOnLoadCallback(load);
