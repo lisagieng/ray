@@ -4,3 +4,6 @@ Some website standards:
 	+ Use <body class="wrapper"> to instantiate the website standard wrapper
 - Headers for sections will be sized h3
 - Use <p> for content
+- When using links, if they're leading to pages that are not on the website,
+  open them in a new tab with target="_blank". If they're links to other pages that
+  are part of the website, just leave it without the target. 
