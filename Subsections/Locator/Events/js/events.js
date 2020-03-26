@@ -37,3 +37,4 @@ $("#eventsHere").html(events);
 
 xhttp.open("GET", "js/events.json", true);
 xhttp.send('');
+}
