@@ -24,9 +24,9 @@ $(function() {
     if(xhttp.status === 200) {
       responseObject = JSON.parse(xhttp.responseText);
     }
-    console.log(responseObject.events[0].name);
+    console.log(responseObject.length);
 
-  for(var i = 0; i < responseObject.event.length; i++){
+  for(var i = 0; i < responseObject.length; i++){
     var name = responseObject.events[i].name;
     var desc = responseObject.events[i].description;
     var date = responseObject.events[i].date;
