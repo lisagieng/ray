@@ -64,22 +64,30 @@
   <div class="container-fluid pt-4">
     <div class="row">
       <div class="col-md-4 col-12 pb-2">
-        <img class="container-fluid" src="img/home-pixabay.jpg" alt="Recycling">
-        <!--https://pixabay.com/photos/recycle-reuse-recycling-recyclable-57136/-->
+        <img class="container-fluid" src="img/RAY.png" alt="RAY">
+
       </div>
       <div class="col-md-7 col-12">
-        <h3>Is that recyclable?</h3>
-        <p>Only 10% of what you recycle actually gets recycled into other products. (1)
-          This is caused by contamination, which occurs when non-recyclable or dirty
-          products are put into recycling.</p>
-        <p>Learn more about whether you’re properly recycling <a href="#">here</a>.<p>
-        <p>Have a product that you’re unsure of whether it is recyclable or not? Search for it <a href="#">here</a>!</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <h3>Not sure where to start?</h3>
-        <p>blahblahlabha</p>
+        <div class="topnav">
+		  <div class="search-container">
+			  <a>Is this recyclable?</a>
+		      <input type="text" placeholder="Search..." name="search" />
+		      <button onclick="document.getElementById('hidden0').style.display = 'block'; document.getElementById('hidden1').style.display = 'block'; document.getElementById('hidden2').style.display = 'block';" type="submit"><i class="fa fa-search"></i></button>
+		  </div>
+		</div>
+		<div class="col-sm-4 pb-2">
+			<div class="row">
+				<h3 id="hidden0" class="hidden">Plastic water bottles:</h3>
+				<div class="column">
+	        		<img id="hidden1" class="hidden" src="img/WaterBottle.png">
+	        	</div>
+	        	<div class="column">
+	    	    	<img id="hidden2" class="hidden" src="img/Yes.png">
+	    	    </div>
+    	    </div>
+      	</div>
+		
+		
       </div>
     </div>
   </div>
@@ -96,4 +104,5 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!-- JS things -->
   <script src="js/home.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </body>
