@@ -25,8 +25,8 @@ $(function() {
       responseObject = JSON.parse(xhttp.responseText);
     }
     console.log(responseObject.events[0].name);
-
-  for(var i = 0; i < responseObject.length; i++){
+var i = 0;
+  //for(var i = 0; i < responseObject.length; i++){
     var name = responseObject.events[i].name;
     var desc = responseObject.events[i].description;
     var date = responseObject.events[i].date;
@@ -35,7 +35,7 @@ $(function() {
     var link =responseObject.events[i].link;
 
     myEvents += "<tr><td>" + name + "</td></tr>";
-  }
+  //}
     $("#eventsHere").html(myEvents);
   }
   xhttp.open("GET", "js/events.json", true);
