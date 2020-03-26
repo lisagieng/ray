@@ -10,6 +10,12 @@
   display:inline;
 }
 
+/* for images under mission statement */
+.smol {
+  height: 150px;
+  border-radius: 50%;
+}
+
 /* for news box */
 .news {
   width: auto;
