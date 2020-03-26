@@ -24,7 +24,7 @@ $(function() {
     if(xhttp.status === 200) {
       responseObject = JSON.parse(xhttp.responseText);
     }
-    
+
   for(var i = 0; i < Object.keys(responseObject.events).length; i++){
     var name = responseObject.events[i].name;
     var desc = responseObject.events[i].description;
@@ -33,7 +33,7 @@ $(function() {
     var org = responseObject.events[i].organizer;
     var link =responseObject.events[i].link;
 
-    myEvents += "<tr><td>" + name + "</td><td>" + desc + "</td><td>" + date + "</td><td>" + loc + "</td><td>" + org + "</td><td>" + link + "</td><tr>";
+    myEvents += "<tr><td>" + name + "</td><td>" + desc + "</td><td>" + date + "</td><td>" + loc + "</td><td>" + org + "</td><td>" + link + "</td></tr>";
     }
     $("#eventsHere").html(myEvents);
   }
