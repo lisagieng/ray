@@ -3,7 +3,7 @@
 }
 
 .hidden{
-	content:hidden;
+	visibility:hidden;
 }
 
 /* Two image containers*/
