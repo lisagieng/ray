@@ -18,12 +18,12 @@
   <!-- Navbar -->
   <ul class="nav nav-justified">
     <li class="nav-item my-button">
-      <a class="nav-link rounded-0" href="home.html">Home</a>
+      <a class="nav-link rounded-0" href="https://lisagieng.github.io/ray/">Home</a>
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle rounded-0" data-toggle="dropdown" href="pages/sustainability/sustainability.html" role="button" aria-haspopup="true" aria-expanded="false">Sustainability</a>
+      <a class="nav-link dropdown-toggle rounded-0" data-toggle="dropdown" href="https://lisagieng.github.io/ray/Subsections/Sustainability/Overview.html" role="button" aria-haspopup="true" aria-expanded="false">Sustainability</a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="pages/sustainability/sustainability.html">Overview</a>
+        <a class="dropdown-item" href="https://lisagieng.github.io/ray/Subsections/Sustainability/Overview.html">Overview</a>
         <a class="dropdown-item" href="pages/sustainability/beginnersguide.html">Beginner's Guide</a>
         <a class="dropdown-item" href="pages/sustainability/tutorials.html">Tutorials</a>
         <a class="dropdown-item" href="pages/sustainability/bestworstof.html">Best & Worst Of</a>
@@ -49,9 +49,9 @@
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle rounded-0" data-toggle="dropdown" href="pages/kids/kids.html" role="button" aria-haspopup="true" aria-expanded="false">Kid's Place</a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="pages/kids/kids.html">Overview</a>
-        <a class="dropdown-item" href="pages/kids/quizzes.html">Quizzes</a>
-        <a class="dropdown-item" href="pages/kids/coloring.html">Coloring</a>
+        <a class="dropdown-item" href="https://lisagieng.github.io/ray/Subsections/KidsPlace/Overview/Overview.html">Overview</a>
+        <a class="dropdown-item" href="https://lisagieng.github.io/ray/Subsections/KidsPlace/Quizzes/Quizzes.html">Quizzes</a>
+        <a class="dropdown-item" href="https://lisagieng.github.io/ray/Subsections/KidsPlace/Coloring/Coloring.html">Coloring</a>
       </div>
     </li>
     <li class="nav-item my-button">
@@ -69,11 +69,12 @@
       </div>
       <div class="col-md-7 col-12">
         <h3>Test Your Knowledge</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
-          <form action="#"> <!--change the action to tabulate a score upon clicking the submit button-->
+          <form onsubmit="score()"> <!--change the action to tabulate a score upon clicking the submit button-->
             <p>Please answer the following questions and then click submit to score your quiz:</p>
             <p>Question 1:</p>
             <input type="radio" id="answer1" name="answer" value="correct">
@@ -99,8 +100,10 @@
             <input type="radio" id="answer3" name="answer" value="false">
             <label for="answer3">incorrect answer</label><br><br>
 
-            <input type="submit" value="Submit">
+            <input name="scored" type="submit" value="Submit">
           </form>
+
+          <p id="demo"></p>
       </div>
     </div>
   </div>
