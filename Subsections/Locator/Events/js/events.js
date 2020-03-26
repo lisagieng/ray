@@ -16,22 +16,25 @@
      .on('click', '.dropdown-menu a', toggleDropdown);
 
 // parsing json for events
-var xhttp = new XMLHttpRequest();
-xhttp.onload = function() {
-  //if(xhttp.status === 200) {
-    responseObject = JSON.parse(xhttp.responseText);
-  //}
-  var myEvents = "<tr>";
+$(function() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    //if(xhttp.status === 200) {
+      responseObject = JSON.parse(xhttp.responseText);
+    //}
+    var myEvents = "";
 
-for(var i = 0; i < responseObject.length; i++){
-    myEvents += "<td>" + responseObject.events[i].name + "</td>";
-    myEvents += "<td>" + responseObject.events[i].description + "</td>";
-    myEvents += "<td>" + responseObject.events[i].date + "</td>";
-    myEvents += "<td>" + responseObject.events[i].location + "</td>";
-    myEvents += "<td>" + responseObject.events[i].organizer + "</td>";
-    myEvents += "<td>" + responseObject.events[i].link + "</td></tr>";
-}
-  $("#eventsHere").html(myEvents);
-}
-xhttp.open("GET", "js/events.json", true);
-xhttp.send('');
+  for(var i = 0; i < responseObject.length; i++){
+      myEvents += "<tr><td>" + responseObject.events[i].name + "</td>";
+      myEvents += "<td>" + responseObject.events[i].description + "</td>";
+      myEvents += "<td>" + responseObject.events[i].date + "</td>";
+      myEvents += "<td>" + responseObject.events[i].location + "</td>";
+      myEvents += "<td>" + responseObject.events[i].organizer + "</td>";
+      myEvents += "<td>" + responseObject.events[i].link + "</td></tr>";
+  }
+    $("#eventsHere").html(myEvents);
+  }
+  xhttp.open("GET", "js/events.json", true);
+  xhttp.send('');
+
+});
