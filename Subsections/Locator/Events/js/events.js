@@ -34,7 +34,7 @@ $(function() {
     var org = responseObject.events[i].organizer;
     var link =responseObject.events[i].link;
 
-    myEvents += "<tr><td>" + name + "</td></tr">
+    myEvents += "<tr><td>" + name + "</td></tr>";
   }
     $("#eventsHere").html(myEvents);
   }
