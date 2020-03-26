@@ -17,6 +17,8 @@ $('body')
 
 // News Feed loader API
 // https://rss2json.com/google-feed-api-alternative
+
+$(function () {
 google.load("feeds", "1");
 
    function initialize() {
@@ -36,3 +38,10 @@ google.load("feeds", "1");
      });
    }
    google.setOnLoadCallback(initialize);
+});
+
+function sorrysearch() {
+  var sorry = "Sorry, the search function for the recycling hasn't been implemented yet.";
+  $("#mybutton").prop("disabled", true);
+  $("#searchme").append(sorry);
+}
