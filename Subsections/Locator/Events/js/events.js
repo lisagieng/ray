@@ -24,7 +24,7 @@ $(function() {
     if(xhttp.status === 200) {
       responseObject = JSON.parse(xhttp.responseText);
     }
-    console.log(responseObject.length);
+    console.log(Object.keys(responseObject.events).length);
 
   for(var i = 0; i < responseObject.length; i++){
     var name = responseObject.events[i].name;
