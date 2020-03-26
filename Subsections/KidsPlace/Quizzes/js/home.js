@@ -14,3 +14,13 @@ function toggleDropdown (e) {
 $('body')
   .on('mouseenter mouseleave','.dropdown',toggleDropdown)
   .on('click', '.dropdown-menu a', toggleDropdown);
+
+function score () {
+    event.preventDefault();
+
+    var para = document.createElement("p");
+    var node = document.createTextNode("This is new.");
+    para.appendChild(node);
+    var element = document.getElementsByName("scored");
+    document.getElementById("demo").innerHTML = "You scored 1/3";
+}
