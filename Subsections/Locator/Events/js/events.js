@@ -18,13 +18,13 @@
 // parsing json for events
 $(function() {
   var myEvents = "";
-  
+
   var xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
     if(xhttp.status === 200) {
       responseObject = JSON.parse(xhttp.responseText);
     }
-
+    console.log(responseObject);
   for(var i = 0; i < responseObject.length; i++){
       myEvents += "<tr><td>" + responseObject.events[i].name + "</td>";
       myEvents += "<td>" + responseObject.events[i].description + "</td>";
