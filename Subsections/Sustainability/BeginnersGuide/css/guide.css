@@ -1,0 +1,32 @@
+#guideList li:not(:last-child){
+	margin-bottom: 20px;
+}
+
+.bg-alt {
+  background-color: rgba(195,217,163,0.3);
+}
+
+#sus_imgA{
+	width: 80%;
+}
+#sus_imgB{
+	width: 80%;
+	margin: auto;
+}
+
+#img_container{
+	text-align: right;
+}
+
+
+h3 {
+	margin-left: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+footer {
+  padding: 20px 20px 0 20px;
+  background-color: #2d3027;
+  color: white;
+}

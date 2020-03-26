@@ -5,6 +5,7 @@
     <title>Recycling & You</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/locator.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -63,25 +64,25 @@
   <!-- Quick Links lead -->
   <div class="container-fluid pt-4">
     <div class="row">
-      <div class="col-md-4 col-12 pb-2">
-        <img class="container-fluid" src="img/home-pixabay.jpg" alt="Recycling">
-        <!--https://pixabay.com/photos/recycle-reuse-recycling-recyclable-57136/-->
-      </div>
       <div class="col-md-7 col-12">
-        <h3>Is that recyclable?</h3>
-        <p>Only 10% of what you recycle actually gets recycled into other products. (1)
-          This is caused by contamination, which occurs when non-recyclable or dirty
-          products are put into recycling.</p>
-        <p>Learn more about whether you’re properly recycling <a href="#">here</a>.<p>
-        <p>Have a product that you’re unsure of whether it is recyclable or not? Search for it <a href="#">here</a>!</p>
+        <h3>Looking for somewhere to recycle?</h3>
       </div>
     </div>
     <div class="row">
-      <div class="col-12">
-        <h3>Not sure where to start?</h3>
-        <p>blahblahlabha</p>
-      </div>
-    </div>
+		<div id="loc-selector" class="pac-controls">
+			<input type="checkbox" id="compost heap" name="compost heap" checked="checked">
+			<label for="compost heap">Compost Heap</label>
+			<input type="checkbox" id="electronics recycling" name="electronics recycling">
+			<label for="electronics recycling">Electronics</label>
+			<input type="checkbox" id="glass recycling" name="glass recycling">
+			<label for="glass recycling">Glass</label>
+			<input type="checkbox" id="ink cartridges" name="ink cartridges">
+			<label for="ink cartridges">Ink Cartridges</label>	
+		</div>
+	</div>
+   	<div class="row">
+	  <div id="map"></div>
+	</div>
   </div>
 
 
@@ -96,4 +97,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!-- JS things -->
   <script src="js/home.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbtewZ7C10gOc9eyjccWkBjRFsFmAFxKE&callback=initMap&libraries=places" async defer></script>
+  <script src="js/locator.js"></script>
 </body>
