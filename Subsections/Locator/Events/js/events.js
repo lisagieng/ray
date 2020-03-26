@@ -25,13 +25,16 @@ $(function() {
       responseObject = JSON.parse(xhttp.responseText);
     }
     console.log(responseObject.events[0].name);
+
   for(var i = 0; i < responseObject.length; i++){
-      myEvents += "<tr><td>" + responseObject.events[i].name + "</td>";
-      myEvents += "<td>" + responseObject.events[i].description + "</td>";
-      myEvents += "<td>" + responseObject.events[i].date + "</td>";
-      myEvents += "<td>" + responseObject.events[i].location + "</td>";
-      myEvents += "<td>" + responseObject.events[i].organizer + "</td>";
-      myEvents += "<td>" + responseObject.events[i].link + "</td></tr>";
+    var name = responseObject.events[i].name;
+    var desc = responseObject.events[i].description;
+    var date = responseObject.events[i].date;
+    var loc = responseObject.events[i].location;
+    var org = responseObject.events[i].organizer;
+    var link =responseObject.events[i].link;
+
+    myEvents += "<tr><td>" + name + "</td></tr">
   }
     $("#eventsHere").html(myEvents);
   }
