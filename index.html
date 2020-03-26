@@ -92,7 +92,36 @@
     </div></div></div>
 
   <!-- Quick Links lead -->
-  <div class="pt-3 pb-2 bg-alt">
+  <div class="container-fluid pt-2 pb-3 bg-alt">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3>Not sure where to start?</h3>
+        <form class="justify-content-center form-inline">
+          <h4>I'm looking for </h4>
+          <select id="sel1" class="spaceplz form-control" >
+            <option value="blank1"> </option>
+            <option value="ways">ways</option>
+            <option value="how">how</option>
+            <option value="where">where</option>
+          </select>
+          <h4> to </h4>
+          <select id="sel2" class="spaceplz form-control">
+            <option value="blank2"> </option>
+            <option value="planet">help the planet</option>
+            <option value="sustainable">be sustainable</option>
+            <option value="recycle">recycle</option>
+            <option value="educate">educate others</option>
+          </select>
+          <button id="help" onclick="helpme()" class="btn btn-success">Help me!</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center hideme" id="results"></div>
+  </div></div></div>
+
+  <!-- more content -->
+  <div class="pt-3">
     <div class="row container-fluid mx-auto">
       <div class="col-md-5 col-12 pb-2">
         <img class="container" src="img/home-pixabay.jpg" alt="Recycling">
@@ -110,20 +139,8 @@
           <button id="mybutton" class="btn btn-success" onclick="sorrysearch()">Search</button></form>
       </div></div></div>
 
-  <!-- begin more content -->
-  <div class="container-fluid pt-3">
-    <div class="row">
-      <div class="col-12">
-        <h3>Not sure where to start?</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.</p>
-  </div></div></div>
-
-  <div class="container-fluid title news bg-alt pt-3">
+  <!-- newsfeed -->
+  <div class="container-fluid title news bg-alt pt-2 mt-3">
     <h3>News</h3> <small class="text-muted">Source: <a href="https://www.sciencedaily.com/">ScienceDaily</a>.</small><hr>
       <p id ="feed"></p><p id="feedControl">Loading...</p></div>
   </div>
@@ -154,7 +171,7 @@
     </div>
   </footer>
 
-  <!-- JQuery -->
+  <!-- jQuery -->
   <script
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="

@@ -45,3 +45,17 @@ function sorrysearch() {
   $("#mybutton").prop("disabled", true);
   $("#searchme").append(sorry);
 }
+
+function helpme() {
+  var selected1 = $("#sel1").val();
+  var selected2 = $("#sel2").val();
+  if (selected1 != "blank1" && selected2 != "blank2"){
+    $("#help").prop("disabled", true);
+    results();
+  }
+}
+
+function results() {
+  var display = "<h5>Results relating to what you chose would appear here.</br>Unfortunately, this is still under construction.</br>We hope to finish implementing it soon!</h5>"
+  $("#results").html(display);
+}
