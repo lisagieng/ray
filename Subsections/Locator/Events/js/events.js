@@ -26,7 +26,7 @@ $(function() {
     }
     console.log(Object.keys(responseObject.events).length);
 
-  for(var i = 0; i < responseObject.length; i++){
+  for(var i = 0; i < Object.keys(responseObject.events).length; i++){
     var name = responseObject.events[i].name;
     var desc = responseObject.events[i].description;
     var date = responseObject.events[i].date;
@@ -34,8 +34,8 @@ $(function() {
     var org = responseObject.events[i].organizer;
     var link =responseObject.events[i].link;
 
-    myEvents += "<tr><td>" + name + "</td></tr>";
-  }
+    myEvents += "<tr><td>" + name + "</td><td>" + desc + "</td><td>" + date + "</td><td>" + loc + "</td><td>" + org + "</td><td>" + link "</td><tr>";
+    }
     $("#eventsHere").html(myEvents);
   }
   xhttp.open("GET", "js/events.json", true);
