@@ -23,7 +23,7 @@ xhttp.onload = function() {
   //}
   var myEvents = "<tr>";
 
-for(var i = 0; i < 2; i++){
+for(var i = 0; i < responseObject.length; i++){
     myEvents += "<td>" + responseObject.events[i].name + "</td>";
     myEvents += "<td>" + responseObject.events[i].description + "</td>";
     myEvents += "<td>" + responseObject.events[i].date + "</td>";
