@@ -41,3 +41,9 @@ $(function() {
   xhttp.send('');
 
 });
+
+function submission() {
+   //$("#submitEvent").hide();
+   success = "Event submitted. You will receive a confirmation email regarding your event."
+   $("#submitEvent").html(success);
+}
