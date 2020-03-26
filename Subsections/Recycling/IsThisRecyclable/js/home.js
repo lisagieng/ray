@@ -14,3 +14,10 @@ function toggleDropdown (e) {
 $('body')
   .on('mouseenter mouseleave','.dropdown',toggleDropdown)
   .on('click', '.dropdown-menu a', toggleDropdown);
+
+
+function sorrysearch() {
+	document.getElementById('hidden0').style.display = 'block';
+	document.getElementById('hidden1').style.display = 'block';
+	document.getElementById('hidden2').style.display = 'block';
+}
