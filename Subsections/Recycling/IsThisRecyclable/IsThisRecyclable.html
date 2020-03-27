@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Recycling & You</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/recyclable.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
 <body class="wrapper">
   <!-- logo -->
   <div class="container-fluid text-center pt-3 pb-3">
-    <img src="img/logo_web_transparent.png" alt="Recycling & You" class="logo">
+    <img src="../../../img/logo_web_transparent.png" alt="Recycling & You" class="logo">
   </div>
 
   <!-- Navbar -->
@@ -63,34 +64,43 @@
 
   <div class="container-fluid pt-4">
     <div class="row">
-      <div class="col-md-4 col-12 pb-2">
-        <img class="container-fluid" src="img/RAY.png" alt="RAY">
-
+      <div class="col">
+        <h3>Can I Recycle This?</h3>
+        <p>Have you ever picked up an item and wondered if it is recyclable? Have you questioned
+          whether or not tossing that plastic bag into the recycling bin will cause contamination?
+          Look no further! Search the item here and we can help you out.</p>
+    </div></div>
+    <div class="row">
+      <div class="col-md-7 col-7">
+        <input class="form-control" type="text" placeholder="Search for an item..." name="search"></input>
       </div>
-      <div class="col-md-7 col-12">
-        <div class="topnav">
-		  <div class="search-container">
-			  <a>Is this recyclable?</a>
-		      <input type="text" placeholder="Search..." name="search" />
-		      <button id="mybutton" class="btn btn-success" onclick="document.getElementById('hidden0').style.display = 'block'; document.getElementById('hidden1').style.display = 'block'; document.getElementById('hidden2').style.display = 'block';" type="submit">Search</button>
-		  </div>
-		</div>
-		<div class="col-sm-4 pb-2">
-			<div class="row">
-				<h3 id="hidden0" class="hidden">Plastic water bottles:</h3>
-				<div class="column">
-	        		<img id="hidden1" class="hidden" src="img/WaterBottle.png">
-	        	</div>
-	        	<div class="column">
-	    	    	<img id="hidden2" class="hidden" src="img/Yes.png">
-	    	    </div>
-    	    </div>
-      	</div>
-
-
+      <div class="col-md-5 col-5">
+        <button id="mybutton" class="btn btn-success" onclick="oops()" type="submit">Search</button>
+    </div></div></div>
+      <div class="col-12 spaceplz alt-color" id="resultsHere">
+        <div class="row" id="apologies">
+          <div class="col-md-2 col-6 mysample">
+            <img alt="Plastic Bottle" src="img/WaterBottle.png">
+          </div>
+          <div class="col-md-4 col-6 mysample">
+            <h5>Water Bottle</h5>
+            <p><span class="bold">Commonly made of:</span> Plastic</p>
+            <p><span class="bold">Plastic #:</span> 1, 2, 4, 5, 6</p>
+            <p><span class="bold">Recyclable?:</span> Sometimes</p>
+          </div>
+          <div class="col-md-6 col-12 mysample">
+            <p><span class="bold">More information:</span><p>
+              <ul>
+                <li>Only recyclable if #1 and #5</li>
+                <li>The plastic number is commonly found on the bottom of the bottle</li>
+                <li>Can be reused if #2, #4, or #5</li>
+                <li>Most commonly made of plastic #1</li>
+                <li><span class="bold">Do not</span> reuse if it is plastic #1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
     <!-- footer -->
   <footer>
@@ -129,5 +139,5 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!-- JS things -->
-  <script src="js/home.js"></script>
+  <script src="js/recycle.js"></script>
 </body>
