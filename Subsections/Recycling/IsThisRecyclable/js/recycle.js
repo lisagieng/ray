@@ -21,3 +21,10 @@ function sorrysearch() {
 	document.getElementById('hidden1').style.display = 'block';
 	document.getElementById('hidden2').style.display = 'block';
 }
+
+function oops() {
+  var sorry = "<h5>Sorry, the recycling search hasn't been implemented yet.<br>Here's a sample result.</h5>";
+  $("#apologies").before(sorry);
+  $(".mysample").css("display", "inline-block");
+  $("#mybutton").prop("disabled", true);
+}
