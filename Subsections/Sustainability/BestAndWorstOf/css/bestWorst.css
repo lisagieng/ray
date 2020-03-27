@@ -2,6 +2,19 @@
 	background-color: rgba(195,217,163,0.3);
 }
 
+#title {
+	margin-left: 1%;
+}
+
+#imgBestWorst {
+	width: 50%;
+	margin: auto;
+}
+
+#imgHolder {
+	text-align: center;
+}
+
 #colBestWorst {
 	margin: auto;
 }
