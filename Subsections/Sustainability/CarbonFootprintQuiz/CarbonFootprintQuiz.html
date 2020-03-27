@@ -5,6 +5,7 @@
     <title>Recycling & You</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/carbonFootprintQuiz.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -64,22 +65,76 @@
   <div class="container-fluid pt-4">
     <div class="row">
       <div class="col">
-        <h3>Carbon Footprint</h3>
+        <h3 id="title">Carbon Footprint</h3>
         <p>What is your carbon footprint? some facts</p>
     </div></div>
     <div class="row">
       <div class="col">
-        <h3>Quiz</h3>
-        <p>Description</p>
+        <h3 id="title">Quiz</h3>
+        <p>This will be a description of the following quiz. This quiz is built of agree/neutral/disagree questions that are weighted with points and will add to a points total that will determine how large your carbon footprint</p>
       </div>
     </div>
     <div class="row">
       <div class="col">
-        quiz here
+        <form id="carbonQuiz">
+		  <h4>Do you separate your recycling?</h4>
+		  <div class="row pt-3 pb-3" id="radio-group">
+			<label class="radio-inline">
+			  <input type="radio" name="question1"> Agree
+			</label>
+			<label class="radio-inline">
+			  <input type="radio" name="question1"> Neutral
+			</label>
+			<label class="radio-inline">
+			  <input type="radio" name="question1"> Disagree
+			</label>
+		  </div>
+		  <h4>Do you use solar power in your home?</h4>
+		  <div class="row pt-3 pb-3" id="radio-group">
+			<label class="radio-inline">
+			  <input type="radio" name="question2"> Agree
+			</label>
+			<label class="radio-inline">
+			  <input type="radio" name="question2"> Neutral
+			</label>
+			<label class="radio-inline">
+			  <input type="radio" name="question2"> Disagree
+			</label>
+		  </div>
+		  <h4>Another question...</h4>
+		  <div class="row pt-3 pb-3" id="radio-group">
+			<label class="radio-inline">
+			  <input type="radio" name="question3"> Agree
+			</label>
+			<label class="radio-inline">
+			  <input type="radio" name="question3"> Neutral
+			</label>
+			<label class="radio-inline">
+			  <input type="radio" name="question3"> Disagree
+			</label>
+		  </div>		  
+		  <div class="row pt-3 pb-4">
+		    <input id="subButton" type="submit" value="Submit">
+		  </div>
+	    </form>
       </div>
     </div>
     <!-- probably should make an area of what quiz results mean -->
+	<div id class="row pt-3 pb-3">
+	  <div class="col">
+	    <h3 id="resultsTitle">Results</h3>
+	    <p>In this area, the quiz results will be displayed as an aggregate score based on the scores added together from each question. A high score will likely result in a smaller carbon footprint, while a lower score will result in a larger one.</p>
+	  </div>
+	</div>
   </div>
+  
+    <footer>
+    <div class="row text-center">
+      <div class="container">
+        <p>&copy; 2020 Recycling & You</p>
+      </div>
+    </div>
+  </footer>
 
 
   <!-- JQuery -->
