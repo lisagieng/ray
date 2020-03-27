@@ -1,0 +1,14 @@
+.bg-alt {
+	background-color: rgba(195,217,163,0.3);
+}
+
+#colBestWorst {
+	margin: auto;
+}
+
+#olBestWorst li:not(:last-child){
+	margin-bottom: 20px;
+}
+#olBestWorst li {
+	background-color: #fbfff2;
+}
