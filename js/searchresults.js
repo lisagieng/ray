@@ -4,7 +4,7 @@ function sorrysearch() {
   $("#searchme").append(sorry);
 }
 
-/*$.validator.addMethod('selectcheck', function (value) {
+$.validator.addMethod('selectcheck', function (value) {
     return (value != '0');
 });
 
@@ -17,7 +17,7 @@ $(function () {
         sel2: {selectcheck: true}
       }
     });
-});*/
+});
 
 
 $(function () {
