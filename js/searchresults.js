@@ -5,30 +5,44 @@ function sorrysearch() {
   $("#searchme").append(sorry);
 }
 
-$(function() {
-  var selected1 = $("#sel1").val();
-  var selected2 = $("#sel2").val();
+$.validator.addMethod('selectcheck', function (value) {
+    return (value != '0');
+});
+
+$(function () {
+    $('#myForm').validate({ // initialize the plugin
+      errorPlacement: function(error, element) {},
+      errorClass: "myselect",
+      rules: {
+        sel1: {selectcheck: true},
+        sel2: {selectcheck: true}
+      }
+    });
+});
+
+/*$(function() {
   $("#sel1").change(function() {
-    if (selected2 == "blank2"){
-      $("#testing").show( "slow" );
+    if($("#sel2").val() == "blank2" && $("#sel1").val() == "blank1"){
+      $("#testing").hide();
     }
-    if (selected2 != "blank2" && selected1 != "blank1"){
-      $("#testing").hide( "slow" );
+    if ($("#sel2").val() == "blank2" || $("#sel1").val() == "blank1"){
+      $("#testing").show();
+    }
+    if ($("#sel1").val() != "blank1" && $("#sel2").val() != "blank2"){
+      $("#testing").hide();
     }
   });
 
   $("#sel2").change(function () {
-    if (selected1 == "blank1"){
-      $("#testing").show( "slow" );
+    if($("#sel2").val() == "blank2" && $("#sel1").val() == "blank1"){
+      $("#testing").hide();
     }
-    if (selected1 != "blank2" && selected2 != "blank1"){
-      $("#testing").hide( "slow" );
+    if ($("#sel1").val() == "blank1" || $("#sel2").val() == "blank2"){
+      $("#testing").show();
     }
+    if ($("#sel2").val() != "blank2" && $("#sel1").val() != "blank1"){
+{      $("#testing").hide();
+    }}
   });
 });
-
-// note to self: add validation if user leaves blank
-function results() {
-  var display = "<h5>Results relating to what you chose would appear here.</br>Unfortunately, this is still under construction.</br>We hope to finish implementing it soon!</h5>"
-  $("#results").html(display);
-}
+*/

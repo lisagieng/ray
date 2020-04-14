@@ -64,6 +64,6 @@
   display: none;
 }
 
-.errorDisplay {
-  color: red;
+.myselect {
+  border: 1px solid red !important;
 }
