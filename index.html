@@ -12,7 +12,7 @@
 <body class="wrapper">
   <!-- logo -->
   <div class="container-fluid text-center pt-3 pb-3">
-    <img src="img/logo_web_transparent.png" alt="Recycling & You" class="logo">
+    <a href="https://lisagieng.github.io/ray/"><img src="img/logo_web_transparent.png" alt="Recycling & You" class="logo"></a>
   </div>
 
   <!-- Navbar -->
@@ -111,12 +111,15 @@
             <option value="recycle">recycle</option>
             <option value="educate">educate others</option>
           </select>
-          <button id="help" onclick="helpme()" class="btn btn-success">Help me!</button>
+          <!--<button id="help" onclick="helpme()" class="btn btn-success">Help me!</button>-->
         </form>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 text-center hideme" id="results"></div>
+      <div class="col-12 text-center hideme" id="results">
+        <h5>Results relating to what you chose would appear here.</br>Unfortunately, this is still under construction.</br>We hope to finish implementing it soon!</h5>
+      </div>
+      <div class="col-12 errorDisplay text-center hideme" id="testing">Please make both selections.</div>
   </div></div></div>
 
   <!-- more content -->
@@ -161,7 +164,7 @@
         </form>
       </div>
       <div class="col-md-7 col-12">
-        <p>Link</br>Link</br>Link</br></p>
+        <p>recyclingandyou.gui@gmail.com</p>
       </div>
     </div>
     <div class="row text-center">
@@ -171,7 +174,7 @@
     </div>
   </footer>
 
-  <!-- jQuery -->
+<!-- jQuery -->
   <script
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -184,4 +187,5 @@
   <script type="text/javascript" src="https://rss2json.com/gfapi.js"></script>
   <!-- JS things -->
   <script src="js/home.js"></script>
+  <script src="js/searchresults.js"></script>
 </body>
