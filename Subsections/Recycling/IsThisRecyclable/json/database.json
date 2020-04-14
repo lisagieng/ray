@@ -1,0 +1,74 @@
+[
+	{
+		"name": "water bottle",
+		"image": "img/WaterBottle.png",
+		"commonlyMadeOf": "plastic",
+		"recyclable": "Sometimes (if plastic is type #1 or #5)",
+		"moreInfo": "Can be reused if type #2, #4, or #5. Do NOT reuse if type #1. Number can usually be found on bottom of the bottle."
+	},
+
+	{
+		"name": "",
+		"image": "",
+		"commonlyMadeOf": "",
+		"recyclable": "",
+		"moreInfo": ""
+	},
+
+	{
+		"name": "",
+		"image": "",
+		"commonlyMadeOf": "",
+		"recyclable": "",
+		"moreInfo": ""
+	},
+
+	{
+		"name": "",
+		"image": "",
+		"commonlyMadeOf": "",
+		"recyclable": "",
+		"moreInfo": ""
+	},
+
+	{
+		"name": "",
+		"image": "",
+		"commonlyMadeOf": "",
+		"recyclable": "",
+		"moreInfo": ""
+	},
+
+	{
+		"name": "",
+		"image": "",
+		"commonlyMadeOf": "",
+		"recyclable": "",
+		"moreInfo": ""
+	},
+
+	{
+		"name": "",
+		"image": "",
+		"commonlyMadeOf": "",
+		"recyclable": "",
+		"moreInfo": ""
+	},
+
+	{
+		"name": "",
+		"image": "",
+		"commonlyMadeOf": "",
+		"recyclable": "",
+		"moreInfo": ""
+	},
+
+	{
+		"name": "",
+		"image": "",
+		"commonlyMadeOf": "",
+		"recyclable": "",
+		"moreInfo": ""
+	},
+
+]
