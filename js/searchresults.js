@@ -1,9 +1,10 @@
 function sorrysearch() {
-  var sorry = "Sorry, the search function for the recycling hasn't been implemented yet.";
+  var sorry = "Sorry, the search function for the recycling hasn't been linked here yet. Please use the link above to get to the search page!";
   $("#mybutton").prop("disabled", true);
   $("#searchme").append(sorry);
 }
 
+// jQuery validation
 $.validator.addMethod('selectcheck', function (value) {
     return (value != '0');
 });
@@ -19,7 +20,7 @@ $(function () {
     });
 });
 
-
+// on select box changes
 $(function () {
   $("#sel1").change(function() { // when first box changes
     if ($("#sel1").val() == "0" && $("#sel2").val() == "0"){ //if no select
