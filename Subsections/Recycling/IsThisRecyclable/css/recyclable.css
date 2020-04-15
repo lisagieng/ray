@@ -33,3 +33,9 @@
 .images {
 	height: 150px;
 }
+
+.resultsbox {
+	height: 70vh;
+  width: auto;
+  overflow: auto;
+}
