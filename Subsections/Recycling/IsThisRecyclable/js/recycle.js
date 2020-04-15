@@ -46,7 +46,7 @@ $(function() {
     }
     $("#resultsHere").html(myItems);
 
-    if (- != Object.keys(responseObject.items).length){
+    if (i != Object.keys(responseObject.items).length){
         tags += name + ",";
     }
     else {
