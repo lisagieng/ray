@@ -27,6 +27,7 @@ $(function() {
   $('#searchIcon').autocomplete({
     source: "/ray/Subsections/Recycling/IsThisRecyclable/json/database.json"
   });
+});
 
 // parsing json for items
 $(function() {
