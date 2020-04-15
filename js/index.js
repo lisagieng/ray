@@ -80,7 +80,7 @@ $(function() {
   });
   $("#events").click(function() {
     $("#div1").load("/ray/Subsections/Events/Events.html");
-      history.pushState('Events', 'Recycling & You', '/ray/Subsections/Events.html');
+      history.pushState('Events', 'Recycling & You', '/ray/Subsections/Events/vents.html');
   });
   $("#additionalResources").click(function() {
     $("#div1").load("/ray/Subsections/AdditionalResources.html");
