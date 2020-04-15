@@ -71,19 +71,19 @@ window.addEventListener("DOMContentLoaded", function() {
 
 $(function() {
   $("#logo").click(function() {
-    $("#div1").load("Subsections/home.html");
+    $("#div1").load("/ray/Subsections/home.html");
     history.pushState('Recycling & You', 'Recycling & You', '/ray/index.html');
   });
   $("#home").click(function() {
-    $("#div1").load("Subsections/home.html");
+    $("#div1").load("/ray/Subsections/home.html");
     history.pushState('Recycling & You', 'Recycling & You', '/ray/index.html');
   });
   $("#events").click(function() {
-    $("#div1").load("Subsections/Events.html");
+    $("#div1").load("/ray/Subsections/Events.html");
       history.pushState('Events', 'Recycling & You', '/ray/Subsections/Events.html');
   });
   $("#additionalResources").click(function() {
-    $("#div1").load("Subsections/AdditionalResources.html");
+    $("#div1").load("/ray/Subsections/AdditionalResources.html");
       history.pushState('Additional Resources', 'Recycling & You', '/ray/Subsections/AdditionalResources.html');
   });
 });
