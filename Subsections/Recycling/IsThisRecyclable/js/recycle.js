@@ -47,10 +47,10 @@ $(function() {
     $("#resultsHere").html(myItems);
 
     if (i != Object.keys(responseObject.items).length){
-        tags += name + ",";
+        tags +="''" + name + "',";
     }
     else {
-      tags += "]";
+      tags += "'" + name + "']";
     }
     $( "#searchIcon" ).autocomplete({
       source: tags
