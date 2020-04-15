@@ -2,7 +2,6 @@
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="../css/events.css">
 
-
   <div class="container-fluid pt-3">
     <h3>Events</h3>
     <p>Description</p>
@@ -37,27 +36,27 @@
           <div class="form-row form-inline submission">
             <div class="col">
               <p>How can we contact you?</p>
-              <input type="text" class="form-control" name="name" id="name" placeholder="Name">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
+              <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
           </div></div>
           <div class="form-row form-inline submission">
             <div class="col">
               <p>Event Information</p>
-              <input type="text" class="form-control" name="eventname" id="eventname" placeholder="Event Name">
-              <input type="text" class="form-control" name="organizer" id="organizer" placeholder="Organizer">
-              <input type="date" class="form-control" name="date" id="date" placeholder="Date">
+              <input type="text" class="form-control" name="eventname" id="eventname" placeholder="Event Name" required>
+              <input type="text" class="form-control" name="organizer" id="organizer" placeholder="Organizer" required>
+              <input type="date" class="form-control" name="date" id="date" placeholder="Date" required>
           </div></div>
           <div class="form-row submission">
             <div class="col">
-              <textarea class="form-control" type="text" rows="3" name="desc" id="desc" placeholder="Description"></textarea>
+              <textarea class="form-control" type="text" rows="3" name="desc" id="desc" placeholder="Description" required></textarea>
           </div></div>
           <div class="form-row form-inline submission">
             <div class="col">
               <p>Event Address</p>
-              <input type="text" class="form-control" name="street" id="street" placeholder="Street Address">
-              <input type="text" class="form-control" name="city" id="city" placeholder="City">
-              <input type="text" class="form-control" name="state" id="state" placeholder="State">
-              <input type="number" class="form-control" name="zip" id="zip" placeholder="Zip Code">
+              <input type="text" class="form-control" name="street" id="street" placeholder="Street Address" required>
+              <input type="text" class="form-control" name="city" id="city" placeholder="City" required>
+              <input type="text" class="form-control" name="state" id="state" placeholder="State" required>
+              <input type="number" class="form-control" name="zip" id="zip" placeholder="Zip Code" required>
           </div></div>
           <div class="form-row submission">
             <button id="my-form-button" class="btn btn-dark">Submit</button>
@@ -66,4 +65,4 @@
         </form>
     </div></div></div>
 
-  <script src="../js/events.js"></script>
+<script src="../js/events.js"></script>

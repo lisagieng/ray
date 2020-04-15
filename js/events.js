@@ -25,11 +25,6 @@ $(function() {
 
 });
 
-function submission() {
-   //$("#submitEvent").hide();
-   success = "Event submitted. You will receive a confirmation email regarding your event."
-   $("#submitEvent").html(success);
-}
 
 //////////////////
 // parsing form for submission
@@ -45,7 +40,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
    function success() {
      form.reset();
-     button.style = "display: none ";
+    // button.style = "display: none ";
      status.innerHTML = "Thanks! Your event has been submitted.";
    }
 
