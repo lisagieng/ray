@@ -25,7 +25,6 @@ $(function() {
 
 });
 
-
 //////////////////
 // parsing form for submission
 window.addEventListener("DOMContentLoaded", function() {
