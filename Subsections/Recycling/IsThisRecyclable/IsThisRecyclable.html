@@ -78,29 +78,23 @@
       <div class="col-md-5 col-5">
         <button id="mybutton" class="btn btn-success" onclick="oops()" type="submit">Search</button>
     </div></div></div>
-      <div class="col-12 spaceplz alt-color" id="resultsHere">
-        <div class="row" id="apologies">
-          <div class="col-md-2 col-6 mysample">
-            <img alt="Plastic Bottle" src="img/WaterBottle.png">
-          </div>
-          <div class="col-md-4 col-6 mysample">
-            <h5>Water Bottle</h5>
-            <p><span class="bold">Commonly made of:</span> Plastic</p>
-            <p><span class="bold">Plastic #:</span> 1, 2, 4, 5, 6</p>
-            <p><span class="bold">Recyclable?:</span> Sometimes</p>
-          </div>
-          <div class="col-md-6 col-12 mysample">
-            <p><span class="bold">More information:</span><p>
-              <ul>
-                <li>Only recyclable if #1 and #5</li>
-                <li>The plastic number is commonly found on the bottom of the bottle</li>
-                <li>Can be reused if #2, #4, or #5</li>
-                <li>Most commonly made of plastic #1</li>
-                <li><span class="bold">Do not</span> reuse if it is plastic #1</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="col-12 spaceplz alt-color" id="results">
+        <div class="row mx-auto">
+          <div class="col-12 col-md-12 eventsbox bg-alt">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Item</th>
+                  <th scope="col">Image</th>
+                  <th scope="col">Commonly Made Of</th>
+                  <th scope="col">Recyclable?</th>
+                  <th scope="col">More Info</th>
+                </tr>
+              </thead>
+              <tbody id="resultsHere">
+              </tbody>
+          </table>
+        </div></div>
       </div>
 
     <!-- footer -->
