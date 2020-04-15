@@ -79,7 +79,7 @@ $(function() {
     history.pushState('Recycling & You', 'Recycling & You', '/ray/index.html');
   });
   $("#events").click(function() {
-    $("#div1").load("/ray/Subsections/Events.html");
+    $("#div1").load("/ray/Subsections/Events/Events.html");
       history.pushState('Events', 'Recycling & You', '/ray/Subsections/Events.html');
   });
   $("#additionalResources").click(function() {
