@@ -72,6 +72,7 @@ window.addEventListener("DOMContentLoaded", function() {
 $(function() {
   $("#logo").click(function() {
     $("#div1").load("Subsections/home.html");
+    history.pushState('data to be passed', 'Title of the page', '/test');
   });
   $("#home").click(function() {
     $("#div1").load("Subsections/home.html");
