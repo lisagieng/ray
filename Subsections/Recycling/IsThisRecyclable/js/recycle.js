@@ -33,14 +33,14 @@ $(function() {
 $(function() {
   var myItems = "";
   var tags = "[";
-
+  var i;
   var xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
     if(xhttp.status === 200) {
       responseObject = JSON.parse(xhttp.responseText);
     }
 
-  for(var i = 0; i < Object.keys(responseObject.items).length; i++){
+  for(i = 0; i < Object.keys(responseObject.items).length; i++){
     var name = responseObject.items[i].name;
     var image = responseObject.items[i].image;
     var material = responseObject.items[i].commonlyMadeOf;
@@ -50,19 +50,21 @@ $(function() {
     myItems += "<tr><td>" + name + "</td><td><a target='_blank' href='" + image + "'><img src='" + image + "' alt='Click to expand image' class='images'></a></td><td>" + material + "</td><td>" + recycle + "</td><td>" + more + "</td></tr>";
 
     if (i != Object.keys(responseObject.items).length){
-        tags +="''" + name + "',";
+        tags += "''" + name + "',";
     }
     else {
       tags += "'" + name + "']";
     }
   }
   $("#resultsHere").html(myItems);
+  console.log(tags);
   /*  $( "#searchIcon" ).autocomplete({
       source: tags
     });*/
   }
   xhttp.open("GET", "json/database.json", true);
   xhttp.send('');
-console.log(tags);
+
+
 });
 ////////////////////
