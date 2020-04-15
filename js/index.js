@@ -67,7 +67,12 @@ window.addEventListener("DOMContentLoaded", function() {
 
  $(document).ready(function(){
     $("#div1").load("Subsections/home.html");
-
+    $("#logo").click(function() {
+      $("#div1").load("Subsections/home.html");
+    });
+    $("#home").click(function() {
+      $("#div1").load("Subsections/home.html");
+    });
     $("#additionalResources").click(function() {
       $("#div1").load("Subsections/AdditionalResources.html");
     });
