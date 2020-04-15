@@ -97,4 +97,5 @@ window.addEventListener("DOMContentLoaded", function() {
 
     $("#additionalResources").click(function() {
       $("#div1").load("subsections/additional.html");
+    }
 });
