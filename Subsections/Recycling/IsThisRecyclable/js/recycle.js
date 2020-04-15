@@ -51,18 +51,18 @@ $(function() {
     }
     $("#resultsHere").html(myItems);
 
-  /*  if (i != Object.keys(responseObject.items).length){
+    if (i != Object.keys(responseObject.items).length){
         tags +="''" + name + "',";
     }
     else {
       tags += "'" + name + "']";
     }
-    $( "#searchIcon" ).autocomplete({
+  /*  $( "#searchIcon" ).autocomplete({
       source: tags
     });*/
   }
   xhttp.open("GET", "json/database.json", true);
   xhttp.send('');
-
+console.log(tags);
 });
 ////////////////////
