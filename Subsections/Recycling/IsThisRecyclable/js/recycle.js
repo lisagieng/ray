@@ -25,7 +25,7 @@ function sorrysearch() {
 ///////////////
 $(function() {
   $('#searchIcon').autocomplete({
-    source: "/ray/Subsections/Recycling/IsThisRecyclable/json/database-copy.json"
+    source: "json/database-copy.json"
   });
 });
 
