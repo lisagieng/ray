@@ -1,4 +1,4 @@
-[
+data = [
 	{
 		"name": "water bottle",
 		"image": "img/WaterBottle.png",
@@ -207,4 +207,11 @@
 		"moreInfo": ""
 	}
 
-]
+];
+
+
+$(function() {
+  $('#searchIcon').autocomplete({
+    source: data
+  });
+});

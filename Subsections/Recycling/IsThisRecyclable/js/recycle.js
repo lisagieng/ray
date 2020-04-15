@@ -23,16 +23,16 @@ function sorrysearch() {
 }
 
 ///////////////
-/*$(function() {
+$(function() {
   $('#searchIcon').autocomplete({
     source: "js/database-copy.json"
   });
-});*/
-  var tags = "[";
+});
+
 // parsing json for items
 $(function() {
   var myItems = "";
-
+  //var tags = "[";
   var i;
   var xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
@@ -48,15 +48,15 @@ $(function() {
     var more = responseObject.items[i].moreInfo;
 
     myItems += "<tr><td>" + name + "</td><td><a target='_blank' href='" + image + "'><img src='" + image + "' alt='Click to expand image' class='images'></a></td><td>" + material + "</td><td>" + recycle + "</td><td>" + more + "</td></tr>";
-    if (i != Object.keys(responseObject.items).length){
+  /*  if (i != Object.keys(responseObject.items).length){
       tags += "'" + name + "',";
         }
     else {
       tags += "]";
-    }
+    }*/
   }
   $("#resultsHere").html(myItems);
-  console.log(tags);/*
+  /*console.log(tags);
     $( "#searchIcon" ).autocomplete({
       source: tags
     });*/
@@ -66,33 +66,3 @@ $(function() {
 
 
 });
-////////////////////
-
-$('#searchIcon').keyup(function(){
-            var searchField = $(this).val();
-			if(searchField === '')  {
-				$('#resultsHere').html('');
-				return;
-			}
-
-            var regex = new RegExp(searchField, "i");
-            var output = '<div class="row">';
-            var count = 1;
-			  $.each(tags, function(key, val){
-				if ((val.name.search(regex) != -1) || (val.commonlyMadeOf.search(regex) != -1)) {
-				  output += '<div class="col-md-6 well">';
-				  output += '<div class="col-md-3"><img class="img-responsive" src="'+val.image+'" alt="'+ val.name +'" /></div>';
-				  output += '<div class="col-md-7">';
-				  output += '<h5>' + val.name + '</h5>';
-				  output += '<p>' + val.commonlyMadeOf + '</p>'
-				  output += '</div>';
-				  output += '</div>';
-				  if(count%2 == 0){
-					output += '</div><div class="row">'
-				  }
-				  count++;
-				}
-			  });
-			  output += '</div>';
-			  $('#resultsHere').html(output);
-        });
