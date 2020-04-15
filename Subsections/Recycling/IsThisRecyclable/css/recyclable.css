@@ -41,7 +41,8 @@
 }
 
 #searchIcon {
-  background-image: url('img/search.png'); /* Add a search icon to input */
+  background-image: url('../img/search.png'); /* Add a search icon to input */
+	background-size: 15px;
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
   width: 100%; /* Full-width */
