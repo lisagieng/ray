@@ -53,8 +53,8 @@ $(function() {
     }
     else {
       tags += "'" + name + "']";
-    }*/
-  }
+    }
+  }*/
   $("#resultsHere").html(myItems);
 /*  console.log(tags);
     $( "#searchIcon" ).autocomplete({
