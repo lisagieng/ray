@@ -52,13 +52,13 @@ $(function() {
     else {
       tags += "]";
     }
-    $( "#searchIcon" ).autocomplete({
-      source: tags
-    });
 
   }
   xhttp.open("GET", "json/database.json", true);
   xhttp.send('');
+  $( "#searchIcon" ).autocomplete({
+    source: tags
+  });
 
 });
 ////////////////////
