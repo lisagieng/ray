@@ -23,6 +23,11 @@ function sorrysearch() {
 }
 
 ///////////////
+$(function() {
+  $('#searchIcon').autocomplete({
+    source: "json/database.json"
+  });
+});
 
 // parsing json for items
 $(function() {
@@ -46,7 +51,7 @@ $(function() {
     }
     $("#resultsHere").html(myItems);
 
-    if (i != Object.keys(responseObject.items).length){
+  /*  if (i != Object.keys(responseObject.items).length){
         tags +="''" + name + "',";
     }
     else {
@@ -54,7 +59,7 @@ $(function() {
     }
     $( "#searchIcon" ).autocomplete({
       source: tags
-    });
+    });*/
   }
   xhttp.open("GET", "json/database.json", true);
   xhttp.send('');
