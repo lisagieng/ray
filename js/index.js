@@ -76,6 +76,9 @@ $(function() {
   $("#home").click(function() {
     $("#div1").load("Subsections/home.html");
   });
+  $("#events").click(function() {
+    $("#div1").load("Subsections/Events.html");
+  });
   $("#additionalResources").click(function() {
     $("#div1").load("Subsections/AdditionalResources.html");
   });
