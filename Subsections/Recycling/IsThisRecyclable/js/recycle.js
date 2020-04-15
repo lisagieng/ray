@@ -25,7 +25,7 @@ function sorrysearch() {
 ///////////////
 $(function() {
   $('#searchIcon').autocomplete({
-    source: "json/database-copy.json"
+    source: "database-copy.json"
   });
 });
 
