@@ -37,7 +37,7 @@ $(function() {
     }
     $("#eventsHere").html(myEvents);
   }
-  xhttp.open("GET", "js/events.json", true);
+  xhttp.open("GET", "../js/events.json", true);
   xhttp.send('');
 
 });
