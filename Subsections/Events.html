@@ -33,35 +33,36 @@
       <div class="col-12 col-md-10">
         <h3>Submit an event</h3>
         <p>Do you have an event you would like to add to this list? Fill out this form to have you event approved to be added!</p>
-        <form id="submitEvent">
+        <form id="submitEvent" action="https://formspree.io/meqldkoq" method="POST">
           <div class="form-row form-inline submission">
             <div class="col">
               <p>How can we contact you?</p>
-              <input type="text" class="form-control" id="name" placeholder="Name">
-              <input type="email" class="form-control" id="email" placeholder="Email Address">
+              <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
           </div></div>
           <div class="form-row form-inline submission">
             <div class="col">
               <p>Event Information</p>
-              <input type="text" class="form-control" id="eventname" placeholder="Event Name">
-              <input type="text" class="form-control" id="organizer" placeholder="Organizer">
-              <input type="date" class="form-control" id="date" placeholder="Date">
+              <input type="text" class="form-control" name="eventname" id="eventname" placeholder="Event Name">
+              <input type="text" class="form-control" name="organizer" id="organizer" placeholder="Organizer">
+              <input type="date" class="form-control" name="date" id="date" placeholder="Date">
           </div></div>
           <div class="form-row submission">
             <div class="col">
-              <textarea class="form-control" type="text" rows="3" id="desc" placeholder="Description"></textarea>
+              <textarea class="form-control" type="text" rows="3" name="desc" id="desc" placeholder="Description"></textarea>
           </div></div>
           <div class="form-row form-inline submission">
             <div class="col">
               <p>Event Address</p>
-              <input type="text" class="form-control" id="street" placeholder="Street Address">
-              <input type="text" class="form-control" id="city" placeholder="City">
-              <input type="text" class="form-control" id="state" placeholder="State">
-              <input type="number" class="form-control" id="zip" placeholder="Zip Code">
+              <input type="text" class="form-control" name="street" id="street" placeholder="Street Address">
+              <input type="text" class="form-control" name="city" id="city" placeholder="City">
+              <input type="text" class="form-control" name="state" id="state" placeholder="State">
+              <input type="number" class="form-control" name="zip" id="zip" placeholder="Zip Code">
           </div></div>
           <div class="form-row submission">
-            <button onclick="submission()" class="btn btn-dark">Submit</button>
+            <button id="my-form-button" class="btn btn-dark">Submit</button>
           </div>
+          <p id="my-form-status"></p>
         </form>
     </div></div></div>
 
