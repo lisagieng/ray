@@ -23,11 +23,11 @@ function sorrysearch() {
 }
 
 ///////////////
-$(function() {
+/*$(function() {
   $('#searchIcon').autocomplete({
     source: "js/database-copy.json"
   });
-});
+});*/
 
 // parsing json for items
 $(function() {
@@ -61,3 +61,32 @@ $(function() {
 
 });
 ////////////////////
+
+$('#searchIcon').keyup(function(){
+            var searchField = $(this).val();
+			if(searchField === '')  {
+				$('#resultsHere').html('');
+				return;
+			}
+
+            var regex = new RegExp(searchField, "i");
+            var output = '<div class="row">';
+            var count = 1;
+			  $.each(data, function(key, val){
+				if ((val.name.search(regex) != -1) || (val.commonlyMadeOf.search(regex) != -1)) {
+				  output += '<div class="col-md-6 well">';
+				  output += '<div class="col-md-3"><img class="img-responsive" src="'+val.image+'" alt="'+ val.name +'" /></div>';
+				  output += '<div class="col-md-7">';
+				  output += '<h5>' + val.name + '</h5>';
+				  output += '<p>' + val.commonlyMadeOf + '</p>'
+				  output += '</div>';
+				  output += '</div>';
+				  if(count%2 == 0){
+					output += '</div><div class="row">'
+				  }
+				  count++;
+				}
+			  });
+			  output += '</div>';
+			  $('#resultsHere').html(output);
+        });
