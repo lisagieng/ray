@@ -23,11 +23,11 @@ function sorrysearch() {
 }
 
 ///////////////
-$(function() {
+/*$(function() {
   $('#searchIcon').autocomplete({
     source: "js/database-copy.json"
   });
-});
+});*/
 
 // parsing json for items
 $(function() {
