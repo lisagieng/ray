@@ -53,7 +53,7 @@ $(function() {
 
 /////////////////////
 // search function
-function searchParse() {
+$("#searchIcon").onkeyup = function searchParse() {
   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
   input = $("#searchIcon");
