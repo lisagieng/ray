@@ -1,4 +1,5 @@
-data = [
+$( function() {
+var data = [
 	{
 		"name": "water bottle",
 		"image": "img/WaterBottle.png",
@@ -208,10 +209,7 @@ data = [
 	}
 
 ];
-
-
-$(function() {
-  $('#searchIcon').autocomplete({
-    source: data
-  });
+$('#searchIcon').autocomplete({
+  source: data
+});
 });
