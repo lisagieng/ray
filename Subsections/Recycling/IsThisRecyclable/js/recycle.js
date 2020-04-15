@@ -41,7 +41,7 @@ $(function() {
     var recycle = responseObject.items[i].recyclable;
     var more = responseObject.items[i].moreInfo;
 
-    myItems += "<tr><td>" + name + "</td><td>" + image + "</td><td>" + material + "</td><td>" + recycle + "</td><td>" + more + "</td></tr>";
+    myItems += "<tr><td>" + name + "</td><td><img src='" + image + "' alt='" + name "' class='images'></td><td>" + material + "</td><td>" + recycle + "</td><td>" + more + "</td></tr>";
     }
     $("#resultsHere").html(myItems);
   }
