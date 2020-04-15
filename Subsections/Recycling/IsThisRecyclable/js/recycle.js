@@ -50,7 +50,7 @@ $(function() {
     myItems += "<tr><td>" + name + "</td><td><a target='_blank' href='" + image + "'><img src='" + image + "' alt='Click to expand image' class='images'></a></td><td>" + material + "</td><td>" + recycle + "</td><td>" + more + "</td></tr>";
 
     if (i != Object.keys(responseObject.items).length){
-        tags += "''" + name + "',";
+        tags += "'" + name + "',";
     }
     else {
       tags += "'" + name + "']";
