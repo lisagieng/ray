@@ -23,11 +23,10 @@ function sorrysearch() {
 }
 
 ///////////////
-/*$(function() {
+$(function() {
   $('#searchIcon').autocomplete({
-    source: "json/database.json"
+    source: "/ray/Subsections/Recycling/IsThisRecyclable/json/database.json"
   });
-});*/
 
 // parsing json for items
 $(function() {
@@ -49,18 +48,18 @@ $(function() {
 
     myItems += "<tr><td>" + name + "</td><td><a target='_blank' href='" + image + "'><img src='" + image + "' alt='Click to expand image' class='images'></a></td><td>" + material + "</td><td>" + recycle + "</td><td>" + more + "</td></tr>";
 
-    if (i != Object.keys(responseObject.items).length){
+  /*  if (i != Object.keys(responseObject.items).length){
         tags += "'" + name + "',";
     }
     else {
       tags += "'" + name + "']";
-    }
+    }*/
   }
   $("#resultsHere").html(myItems);
-  console.log(tags);
+/*  console.log(tags);
     $( "#searchIcon" ).autocomplete({
       source: tags
-    });
+    });*/
   }
   xhttp.open("GET", "json/database.json", true);
   xhttp.send('');
