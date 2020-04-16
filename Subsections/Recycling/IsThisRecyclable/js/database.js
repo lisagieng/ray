@@ -1,6 +1,7 @@
 $( function() {
 var data =
-	{url: "json/database-2.json",
+	{url: "json/database.json",
+	listLocation: "items",
 	getValue: "name",
 	template: {
 		type: "description",
@@ -11,6 +12,18 @@ var data =
 	list: {
 		match: {
 			enabled: true
+		},
+		onSelectItemEvent: function () {
+			var id = $("#searchIcon").getSelectedItemData().itemNum;
+			var table = $("#resultsHere");
+			var td = table.$("td");
+			var item = td.attr("id");
+
+			for(var i = 0; i < td.length; i++){
+				if (item != id) {
+					td[i].style.display = "none";
+				}
+			}
 		}
 	}
 	};

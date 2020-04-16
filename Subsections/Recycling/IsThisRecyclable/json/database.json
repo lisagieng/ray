@@ -4,7 +4,8 @@
 		"image": "img/WaterBottle.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "Sometimes (if plastic is type #1 or #5)",
-		"moreInfo": "Can be reused if type #2, #4, or #5. Do NOT reuse if type #1. Number can usually be found on bottom of the bottle."
+		"moreInfo": "Can be reused if type #2, #4, or #5. Do NOT reuse if type #1. Number can usually be found on bottom of the bottle.",
+		"itemNum": "0"
 	},
 
 	{
@@ -12,7 +13,8 @@
 		"image": "img/Plastic.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "sometimes",
-		"moreInfo": "If #1-7 and clean, it can be recycled. Not styrofoam. No plastic bags/wrappers."
+		"moreInfo": "If #1-7 and clean, it can be recycled. Not styrofoam. No plastic bags/wrappers.",
+		"itemNum": "1"
 	},
 
 	{
@@ -20,7 +22,8 @@
 		"image": "img/Metal.png",
 		"commonlyMadeOf": "metal",
 		"recyclable": "sometimes",
-		"moreInfo": "Aluminum trays, plates, and foils can be recycled. Must be clean."
+		"moreInfo": "Aluminum trays, plates, and foils can be recycled. Must be clean.",
+		"itemNum": "2"
 	},
 
 	{
@@ -28,7 +31,8 @@
 		"image": "img/Glass.png",
 		"commonlyMadeOf": "glass",
 		"recyclable": "Sometimes",
-		"moreInfo": "(Clean) jars and bottles can be recycled. No dishes/windows/ceramics."
+		"moreInfo": "(Clean) jars and bottles can be recycled. No dishes/windows/ceramics.",
+		"itemNum": "3"
 	},
 
 	{
@@ -36,7 +40,8 @@
 		"image": "img/Paper.png",
 		"commonlyMadeOf": "paper",
 		"recyclable": "Yes",
-		"moreInfo": "No paper plates, cups, or napkins"
+		"moreInfo": "No paper plates, cups, or napkins",
+		"itemNum": "4"
 	},
 
 	{
@@ -44,7 +49,8 @@
 		"image": "img/Rubber.png",
 		"commonlyMadeOf": "rubber",
 		"recyclable": "no",
-		"moreInfo": "When possible, reuse rubber instead of throwing it out (such as by making rubber compost bins)."
+		"moreInfo": "When possible, reuse rubber instead of throwing it out (such as by making rubber compost bins).",
+		"itemNum": "5"
 	},
 
 	{
@@ -52,7 +58,8 @@
 		"image": "img/Cardboard.png",
 		"commonlyMadeOf": "paper",
 		"recyclable": "Yes",
-		"moreInfo": "Staples, tape, and labels are okay. No food product."
+		"moreInfo": "Staples, tape, and labels are okay. No food product.",
+		"itemNum": "6"
 	},
 
 	{
@@ -60,7 +67,8 @@
 		"image": "img/PlasticBag.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "no",
-		"moreInfo": "Reuse if possible, either as trash bags or on subsequent trips to the store! Alternatively, most supermarkets will let you return bags."
+		"moreInfo": "Reuse if possible, either as trash bags or on subsequent trips to the store! Alternatively, most supermarkets will let you return bags.",
+		"itemNum": "7"
 	},
 
 	{
@@ -68,7 +76,8 @@
 		"image": "img/MilkJug.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "yes",
-		"moreInfo": "Must be clean and empty."
+		"moreInfo": "Must be clean and empty.",
+		"itemNum": "8"
 	},
 
 	{
@@ -76,7 +85,8 @@
 		"image": "img/KetchupBottle.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "yes",
-		"moreInfo": "Must be clean and empty."
+		"moreInfo": "Must be clean and empty.",
+		"itemNum": "9"
 	},
 
 	{
@@ -84,7 +94,8 @@
 		"image": "img/Yogurt.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "yes",
-		"moreInfo": "Must be clean and empty."
+		"moreInfo": "Must be clean and empty.",
+		"itemNum": "10"
 	},
 
 	{
@@ -92,7 +103,8 @@
 		"image": "img/SoapBottle.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "yes",
-		"moreInfo": "Must be clean and empty."
+		"moreInfo": "Must be clean and empty.",
+		"itemNum": "11"
 	},
 
 	{
@@ -100,7 +112,8 @@
 		"image": "img/SoapBottle.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "yes",
-		"moreInfo": "Must be clean and empty."
+		"moreInfo": "Must be clean and empty.",
+		"itemNum": "12"
 	},
 
 	{
@@ -108,7 +121,8 @@
 		"image": "img/SoapBottle.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "yes",
-		"moreInfo": "Must be clean and empty."
+		"moreInfo": "Must be clean and empty.",
+		"itemNum": "13"
 	},
 
 	{
@@ -116,7 +130,8 @@
 		"image": "img/Mouthwash.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "yes",
-		"moreInfo": "Must be clean and empty."
+		"moreInfo": "Must be clean and empty.",
+		"itemNum": "14"
 	},
 
 	{
@@ -124,7 +139,8 @@
 		"image": "img/PillBottle.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "yes",
-		"moreInfo": "Must be clean and empty."
+		"moreInfo": "Must be clean and empty.",
+		"itemNum": "15"
 	},
 
 	{
@@ -132,7 +148,8 @@
 		"image": "img/PillBottle.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "yes",
-		"moreInfo": "Must be clean and empty."
+		"moreInfo": "Must be clean and empty.",
+		"itemNum": "16"
 	},
 
 	{
@@ -140,7 +157,8 @@
 		"image": "img/Styrofoam.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "no",
-		"moreInfo": ""
+		"moreInfo": "",
+		"itemNum": "17"
 	},
 
 	{
@@ -148,7 +166,8 @@
 		"image": "img/PackingPeanuts.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "no",
-		"moreInfo": ""
+		"moreInfo": "",
+		"itemNum": "18"
 	},
 
 	{
@@ -156,7 +175,8 @@
 		"image": "img/ClingWrap.jpg",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "no",
-		"moreInfo": ""
+		"moreInfo": "",
+		"itemNum": "10"
 	},
 
 	{
@@ -164,7 +184,8 @@
 		"image": "img/BlackPlastic.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "no",
-		"moreInfo": ""
+		"moreInfo": "",
+		"itemNum": "20"
 	},
 
 	{
@@ -172,7 +193,8 @@
 		"image": "img/PlasticToy.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "no",
-		"moreInfo": ""
+		"moreInfo": "",
+		"itemNum": "21"
 	},
 
 	{
@@ -180,7 +202,8 @@
 		"image": "img/CoatHanger.png",
 		"commonlyMadeOf": "plastic",
 		"recyclable": "no",
-		"moreInfo": ""
+		"moreInfo": "",
+		"itemNum": "22"
 	},
 
 	{
@@ -188,7 +211,8 @@
 		"image": "img/ShreddedPaper.png",
 		"commonlyMadeOf": "paper",
 		"recyclable": "Sometimes",
-		"moreInfo": "If the paper is smaller than 2\"x2\", it is NOT recyclable."
+		"moreInfo": "If the paper is smaller than 2\"x2\", it is NOT recyclable.",
+		"itemNum": "23"
 	},
 
 	{
@@ -196,7 +220,8 @@
 		"image": "",
 		"commonlyMadeOf": "",
 		"recyclable": "",
-		"moreInfo": ""
+		"moreInfo": "",
+		"itemNum": "24"
 	},
 
 	{
@@ -204,7 +229,8 @@
 		"image": "",
 		"commonlyMadeOf": "",
 		"recyclable": "",
-		"moreInfo": ""
+		"moreInfo": "",
+		"itemNum": "25"
 	}
 
 ]}

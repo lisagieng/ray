@@ -46,8 +46,9 @@ $(function() {
     var material = responseObject.items[i].commonlyMadeOf;
     var recycle = responseObject.items[i].recyclable;
     var more = responseObject.items[i].moreInfo;
+    var id = responseObject.items[i].itemNum;
 
-    myItems += "<tr><td>" + name + "</td><td><a target='_blank' href='" + image + "'><img src='" + image + "' alt='Click to expand image' class='images'></a></td><td>" + material + "</td><td>" + recycle + "</td><td>" + more + "</td></tr>";
+    myItems += "<tr><td id='" + id + "'>" + name + "</td><td><a target='_blank' href='" + image + "'><img src='" + image + "' alt='Click to expand image' class='images'></a></td><td>" + material + "</td><td>" + recycle + "</td><td>" + more + "</td></tr>";
   /*  if (i != Object.keys(responseObject.items).length){
       tags += "'" + name + "',";
         }
