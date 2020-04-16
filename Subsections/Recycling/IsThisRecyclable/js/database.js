@@ -20,7 +20,7 @@ var data =
 		//	var item = td.attr("id");
 
 			for(var i = 0; i < td.length; i++){
-				if (td[i]].attr("id") != id) {
+				if (td[i].attr("id") != id) {
 					td[i].style.display = "none";
 				}
 			}
