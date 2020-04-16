@@ -15,13 +15,13 @@ var data =
 		},
 		onSelectItemEvent: function () {
 			var idNum = $("#searchIcon").getSelectedItemData().itemNum;
-			var tr = $("tbody tr");
+			var tr = $("#resultsHere tr");
 			for(var i = 0; i < tr.length; i++){
 				if (tr[i].id != idNum) { // if id doesn't match, hide it
 					tr[i].style.display = "none";
 				}
 				if (tr[i].id == idNum) {
-					tr[i].style.display = "block";
+					tr[i].style.display = "";
 				}
 			}
 		}
