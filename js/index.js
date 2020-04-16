@@ -79,8 +79,8 @@ $(function() {
     history.pushState('Recycling & You', 'Recycling & You', '/ray/index.html');
   });
   $("#events").click(function() {
-    $("#div1").load("/ray/Subsections/Locator/Events/Events.html");
-      history.pushState('Events', 'Recycling & You', '/ray/Subsections/Events/Events.html');
+    $("#div1").load("/ray/Subsections/Locater/Events/Events.html");
+      history.pushState('Events', 'Recycling & You', '/ray/Subsections/Locater/Events/Events.html');
   });
   $("#additionalResources").click(function() {
     $("#div1").load("/ray/Subsections/AdditionalResources.html");
