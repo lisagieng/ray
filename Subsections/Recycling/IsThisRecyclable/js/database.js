@@ -16,12 +16,12 @@ var data =
 		onSelectItemEvent: function () {
 			var id = $("#searchIcon").getSelectedItemData().itemNum;
 			var tr = $("tbody tr");
-			console.log(tr);
+			//console.log(tr);
 			//var td = table.$("td");
 		//	var item = td.attr("id");
 
 			for(var i = 0; i < tr.length; i++){
-				if (tr[i].attr("id") != id) {
+				if (tr[i].id != id) {
 					tr[i].style.display = "none";
 				}
 			}
