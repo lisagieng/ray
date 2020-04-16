@@ -67,12 +67,9 @@ $(function() {
 
 });
 
-$(function() { // if search box becomes empty
-  var search = $("#searchIcon").length;
-  var tr = $("#resultsHere tr");
-  if (search == 0) {
-    for (var i = 0; i < tr.length; i++) {
-      tr[i].style.display == "";
-    }
+function resetSearch() {
+  var len = $("#resultsHere tr").length;
+  for(var i = 0; i < len; i++) {
+    len[i].style.display = "";
   }
-});
+}
