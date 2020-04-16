@@ -140,7 +140,6 @@ var data =
 			enabled: true
 		  },
 		}
-	}
 	};
 
 $('#searchIcon').easyAutocomplete(data);
