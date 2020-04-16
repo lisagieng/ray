@@ -15,14 +15,14 @@ var data =
 		},
 		onSelectItemEvent: function () {
 			var id = $("#searchIcon").getSelectedItemData().itemNum;
-			var td = $("tr td");
+			var td = $("tbody tr");
 			console.log(td);
 			//var td = table.$("td");
 		//	var item = td.attr("id");
 
-			for(var i = 0; i < td.length; i++){
-				if (td[i].attr("id") != id) {
-					td[i].style.display = "none";
+			for(var i = 0; i < tr.length; i++){
+				if (tr[i].attr("id") != id) {
+					tr[i].style.display = "none";
 				}
 			}
 		}
