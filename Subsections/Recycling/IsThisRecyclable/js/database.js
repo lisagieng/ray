@@ -18,11 +18,11 @@ var data =
 			var tr = $("tbody tr");
 
 			for(var i = 0; i < tr.length; i++){
-				if (tr[i].id != idNum) {
-					tr[i].style.display = "none";
-				}
-				if (tr[i].style.display == "none" && tr[i].id == idNum) {
+				if (tr[i].id == idNum) { // if the id matches, display
 					tr[i].style.display =="block";
+				}
+				if (tr[i].id != idNum) { // if id doesn't match, hide it
+					tr[i].style.display = "none";
 				}
 			}
 		}
