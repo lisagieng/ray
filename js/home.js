@@ -123,3 +123,25 @@ google.load("feeds", "1");
    google.setOnLoadCallback(initialize);
 });
 ///////////////////////////////////////////////////////////////////////
+// search bar
+$( function() {
+var data =
+	{url: "Subsections/Recycling/IsThisRecyclable/json/database.json",
+	listLocation: "items",
+	getValue: "name",
+	template: {
+		type: "description",
+		fields: {
+			description: "recyclable"
+		}
+	},
+	list: {
+		match: {
+			enabled: true
+		  },
+		}
+	}
+	};
+
+$('#searchIcon').easyAutocomplete(data);
+});
