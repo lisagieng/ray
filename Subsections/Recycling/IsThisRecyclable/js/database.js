@@ -20,7 +20,7 @@ var data =
 				if (tr[i].id != idNum) { // if id doesn't match, hide it
 					tr[i].style.display = "none";
 				}
-				if (tr[i].id == idNum) {
+				if (tr[i].id == idNum) { // if id does match, make sure its display prop is not none
 					tr[i].style.display = "";
 				}
 			}

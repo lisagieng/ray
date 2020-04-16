@@ -65,5 +65,14 @@ $(function() {
   xhttp.open("GET", "json/database.json", true);
   xhttp.send('');
 
+});
 
+$(function() { // if search box becomes empty
+  var search = $("#searchIcon").length;
+  var tr = $("#resultsHere tr");
+  if (search == 0) {
+    for (var i = 0; i < tr.length; i++) {
+      tr[i].style.display == "";
+    }
+  }
 });
