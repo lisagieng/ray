@@ -126,7 +126,7 @@ google.load("feeds", "1");
 // search bar
 $( function() {
 var data =
-	{url: "Subsections/Recycling/IsThisRecyclable/json/database.json",
+	{url: "../Subsections/Recycling/IsThisRecyclable/json/database.json",
 	listLocation: "items",
 	getValue: "name",
 	template: {
