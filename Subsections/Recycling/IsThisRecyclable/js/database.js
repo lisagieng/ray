@@ -15,8 +15,8 @@ var data =
 		},
 		onSelectItemEvent: function () {
 			var id = $("#searchIcon").getSelectedItemData().itemNum;
-			var td = $("tbody tr");
-			console.log(td);
+			var tr = $("tbody tr");
+			console.log(tr);
 			//var td = table.$("td");
 		//	var item = td.attr("id");
 
