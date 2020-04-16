@@ -14,14 +14,14 @@ var data =
 			enabled: true
 		},
 		onSelectItemEvent: function () {
-			var id = $("#searchIcon").getSelectedItemData().itemNum;
+			var idNum = $("#searchIcon").getSelectedItemData().itemNum;
 			var tr = $("tbody tr");
 			//console.log(tr);
 			//var td = table.$("td");
 		//	var item = td.attr("id");
 
 			for(var i = 0; i < tr.length; i++){
-				if (tr[i].id != id) {
+				if (tr[i].id != idNum) {
 					tr[i].style.display = "none";
 				}
 			}
