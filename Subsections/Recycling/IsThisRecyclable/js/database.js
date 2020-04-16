@@ -1,6 +1,6 @@
 $( function() {
 var data =
-	{url: "json/database-copy.json",
+	{url: "json/database-2.json",
 	getValue: "name",
 	template: {
 		type: "description",
