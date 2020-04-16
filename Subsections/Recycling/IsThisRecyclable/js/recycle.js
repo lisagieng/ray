@@ -68,8 +68,8 @@ $(function() {
 });
 
 function resetSearch() {
-  var len = $("#resultsHere tr").length;
-  for(var i = 0; i < len; i++) {
-    len[i].style.display = "";
+  var tr = $("#resultsHere tr");
+  for(var i = 0; i < tr.length; i++) {
+    tr[i].style.display = "";
   }
 }
