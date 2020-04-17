@@ -68,6 +68,7 @@ $(function() {
 });
 
 function resetSearch() {
+  $("#resultsHere").val("");
   var tr = $("#resultsHere tr");
   for(var i = 0; i < tr.length; i++) {
     tr[i].style.display = "";
