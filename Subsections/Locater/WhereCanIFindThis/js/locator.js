@@ -112,8 +112,8 @@ function checkBoxes() {
 			str += (" OR " + $(this)[0].id);
 		}
 	});
-	console.log(str);
 	
+	document.getElementById("pac-input").value = str;
 	
 	//*********************************************************
 
