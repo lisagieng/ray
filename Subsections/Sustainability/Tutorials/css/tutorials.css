@@ -6,6 +6,10 @@ footer {
   background-color: #2d3027;
   color: white;
 }
+.videoDesc {
+	height: 480px;
+	overflow: scroll;
+}
 
 .playlist {
 	width: 92%;
@@ -39,12 +43,6 @@ footer {
 	width: 100%;
 	position: relative;
 	top: -13px;
-}
-
-.videoLink .desc {
-	color: #21A1D2;
-	font-size: 15px;
-	margin-top:5px;
 }
 
 .scrollArrows {
