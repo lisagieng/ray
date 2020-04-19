@@ -81,9 +81,9 @@ $(function() {
   /*$("#events").click(function() {
     $("#div1").load("/ray/Subsections/Locater/Events/Events.html");
       history.pushState('Events', 'Recycling & You', '/ray/Subsections/Locater/Events/Events.html');
-  });*/
+  });
   $("#additionalResources").click(function() {
     $("#div1").load("/ray/Subsections/AdditionalResources.html");
       history.pushState('Additional Resources', 'Recycling & You', '/ray/Subsections/AdditionalResources.html');
-  });
+  });*/
 });
