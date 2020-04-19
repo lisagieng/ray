@@ -33,27 +33,27 @@ const scoreDiv = document.getElementById("scoreContainer");
 //create the questions
 let questions = [
     {
-        question : "Place holder 1",
+        question : "How many million tons of food is wasted each year?",
         imgSrc : "img/quiz_time.png",
-        choiceA : "Correct",
-        choiceB : "Wrong",
-        choiceC : "Wrong",
+        choiceA : "21.5",
+        choiceB : "54.2",
+        choiceC : "400",
         correct : "A"
     },
     {
-        question : "Place holder 2",
+        question : "For every ton of glass recycled how many kilograms of carbondioxide is prevented?",
         imgSrc : "img/quiz_time.png",
-        choiceA : "Wrong",
-        choiceB : "Correct",
-        choiceC : "Wrong",
+        choiceA : "420",
+        choiceB : "315",
+        choiceC : "125.2",
         correct : "B"
     },
     {
-        question : "Place holder 3",
+        question : "Recycling an aluminum can can power a tv for how long?",
         imgSrc : "img/quiz_time.png",
-        choiceA : "Wrong",
-        choiceB : "Wrong",
-        choiceC : "Correct",
+        choiceA : "5 hours",
+        choiceB : "30 minutes",
+        choiceC : "2 hours",
         correct : "C"
     }
 ];
