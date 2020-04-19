@@ -11,9 +11,14 @@
 }
 
 #sus_img{
-	width: 80%;
+	width: 75%;
 	margin: auto;
 }
+#sus_imgB{
+	width: 50%;
+	margin: auto;
+}
+
 #img_container{
 	text-align: right;
 }
