@@ -5,6 +5,7 @@
     <title>Recycling & You</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/quizzes.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -72,42 +73,27 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-          <form onsubmit="score()"> <!--change the action to tabulate a score upon clicking the submit button-->
-            <p>Please answer the following questions and then click submit to score your quiz:</p>
-            <p>Question 1:</p>
-            <input type="radio" id="answer1" name="answer" value="correct">
-            <label for="answer1">correct answer</label><br>
-            <input type="radio" id="answer2" name="answer" value="false">
-            <label for="answer2">incorrect answer</label><br>
-            <input type="radio" id="answer3" name="answer" value="false">
-            <label for="answer3">incorrect answer</label><br><br>
 
-            <p>Question 2:</p>
-            <input type="radio" id="answer1" name="answer" value="correct">
-            <label for="answer1">correct answer</label><br>
-            <input type="radio" id="answer2" name="answer" value="false">
-            <label for="answer2">incorrect answer</label><br>
-            <input type="radio" id="answer3" name="answer" value="false">
-            <label for="answer3">incorrect answer</label><br><br>
-
-            <p>Question 3:</p>
-            <input type="radio" id="answer1" name="answer" value="correct">
-            <label for="answer1">correct answer</label><br>
-            <input type="radio" id="answer2" name="answer" value="false">
-            <label for="answer2">incorrect answer</label><br>
-            <input type="radio" id="answer3" name="answer" value="false">
-            <label for="answer3">incorrect answer</label><br><br>
-
-            <input name="scored" type="submit" value="Submit">
-          </form>
-
-          <p id="demo"></p>
-      </div>
+    <div id="container">
+            <div id="start">Start Quiz!</div>
+            <div id="quiz" style="display: none">>
+                <div id="question"></div>
+                <div id="qImg"></div>
+                <div id="choices">
+                    <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                    <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                    <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                </div>
+                <div id="timer">
+                    <div id="counter"></div>
+                    <div id="btimeGuage"></div>
+                    <div id="timeGuage"></div>
+                </div>
+                <div id="progress"></div>
+            </div>
+            <div id="scoreContainer" style="display: none"></div>
     </div>
   </div>
-
 
   <!-- footer -->
   <footer>
