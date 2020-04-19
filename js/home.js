@@ -32,30 +32,30 @@ $(function () {
 
     ////////// HOW
     if ($("#sel1").val() == "how" && $("#sel2").val() == "planet"){ // how/planet
-      $("#results").html("<p>how/planet</p>");
+      $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/Overview.html'>Sustainability</a><br><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/Tutorials/Tutorials.html'>Tutorials</a><br><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/BestAndWorstOf/BestAndWorstOf.html'>Best & Worst Companies</a></p>");
     }
     if ($("#sel1").val() == "how" && $("#sel2").val() == "sustainable"){ // how/sustainable
-      $("#results").html("<p>how/sustainable</p>");
+      $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/BeginnersGuide/BeginnersGuide.html'>A Beginner's Guide to Sustainability</a><br><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/Tutorials/Tutorials.html'>Tutorials</a></p>");
     }
-    if ($("#sel1").val() == "how" && $("#sel2").val() == "recycle"){ // how/educate
-      $("#results").html("<p>how/educate</p>");
+    if ($("#sel1").val() == "how" && $("#sel2").val() == "recycle"){ // how/recycling
+      $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Recycling/Overview/Overview.html'>Recycling</a><br><a href='https://lisagieng.github.io/ray/Subsections/Recycling/IsThisRecyclable/IsThisRecyclable.html'>Is This Item Recyclable?</a></p>");
     }
     if ($("#sel1").val() == "how" && $("#sel2").val() == "educate"){ // how/educate
-      $("#results").html("<p>how/educate</p>");
+      $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/Overview.html'>Sustainability</br><a href='https://lisagieng.github.io/ray/Subsections/Recycling/Overview/Overview.html'>Recycling</a><br><a href='https://lisagieng.github.io/ray/Subsections/KidsPlace/Overview/Overview.html'>Educating Children</a><br><a href='https://lisagieng.github.io/ray/Subsections/AdditionalResources.html'>Additional Resources</a></p>");
     }
 
     ////////// WHERE
     if ($("#sel1").val() == "where" && $("#sel2").val() == "planet"){ // where/planet
-      $("#results").html("<p>where/planet</p>");
+      $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Locater/WhereCanIFindThis/WhereCanIFindThis.html'>Locator</a><br><a href='https://lisagieng.github.io/ray/Subsections/Locater/Events/Events.html'>Events</a></p>");
     }
     if ($("#sel1").val() == "where" && $("#sel2").val() == "sustainable"){ // where/sustainable
-      $("#results").html("<p>where/sustainable</p>");
+      $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Locater/WhereCanIFindThis/WhereCanIFindThis.html'>Locator</a><br><a href='https://lisagieng.github.io/ray/Subsections/Locater/Events/Events.html'>Events</a></p>");
     }
-    if ($("#sel1").val() == "where" && $("#sel2").val() == "recycle"){ // where/educate
-      $("#results").html("<p>where/educate</p>");
+    if ($("#sel1").val() == "where" && $("#sel2").val() == "recycle"){ // where/recycle
+      $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Locater/WhereCanIFindThis/WhereCanIFindThis.html'>Locator</a></p>");
     }
     if ($("#sel1").val() == "where" && $("#sel2").val() == "educate"){ // where/educate
-      $("#results").html("<p>where/educate</p>");
+      $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Locater/WhereCanIFindThis/WhereCanIFindThis.html'>Locator</a></p>");
     }
   });
 
@@ -67,33 +67,33 @@ $(function () {
       $("#results").html(" ");
     }
 
-    ////////// HOW
-    if ($("#sel1").val() == "how" && $("#sel2").val() == "planet"){ // how/planet
-      $("#results").html("<p>how/planet</p>");
-    }
-    if ($("#sel1").val() == "how" && $("#sel2").val() == "sustainable"){ // how/sustainable
-      $("#results").html("<p>how/sustainable</p>");
-    }
-    if ($("#sel1").val() == "how" && $("#sel2").val() == "recycle"){ // how/recycle
-      $("#results").html("<p>how/recycle</p>");
-    }
-    if ($("#sel1").val() == "how" && $("#sel2").val() == "educate"){ // how/educate
-      $("#results").html("<p>how/educate</p>");
-    }
+        ////////// HOW
+        if ($("#sel1").val() == "how" && $("#sel2").val() == "planet"){ // how/planet
+          $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/Overview.html'>Sustainability</a><br><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/Tutorials/Tutorials.html'>Tutorials</a><br><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/BestAndWorstOf/BestAndWorstOf.html'>Best & Worst Companies</a></p>");
+        }
+        if ($("#sel1").val() == "how" && $("#sel2").val() == "sustainable"){ // how/sustainable
+          $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/BeginnersGuide/BeginnersGuide.html'>A Beginner's Guide to Sustainability</a><br><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/Tutorials/Tutorials.html'>Tutorials</a></p>");
+        }
+        if ($("#sel1").val() == "how" && $("#sel2").val() == "recycle"){ // how/recycling
+          $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Recycling/Overview/Overview.html'>Recycling</a><br><a href='https://lisagieng.github.io/ray/Subsections/Recycling/IsThisRecyclable/IsThisRecyclable.html'>Is This Item Recyclable?</a></p>");
+        }
+        if ($("#sel1").val() == "how" && $("#sel2").val() == "educate"){ // how/educate
+          $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/Overview.html'>Sustainability</br><a href='https://lisagieng.github.io/ray/Subsections/Recycling/Overview/Overview.html'>Recycling</a><br><a href='https://lisagieng.github.io/ray/Subsections/KidsPlace/Overview/Overview.html'>Educating Children</a><br><a href='https://lisagieng.github.io/ray/Subsections/AdditionalResources.html'>Additional Resources</a></p>");
+        }
 
-    ////////// WHERE
-    if ($("#sel1").val() == "where" && $("#sel2").val() == "planet"){ // where/planet
-      $("#results").html("<p>where/planet</p>");
-    }
-    if ($("#sel1").val() == "where" && $("#sel2").val() == "sustainable"){ // where/sustainable
-      $("#results").html("<p>where/sustainable</p>");
-    }
-    if ($("#sel1").val() == "where" && $("#sel2").val() == "recycle"){ // where/recycle
-      $("#results").html("<p>where/recycle</p>");
-    }
-    if ($("#sel1").val() == "where" && $("#sel2").val() == "educate"){ // where/educate
-      $("#results").html("<p>where/educate</p>");
-    }
+        ////////// WHERE
+        if ($("#sel1").val() == "where" && $("#sel2").val() == "planet"){ // where/planet
+          $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Locater/WhereCanIFindThis/WhereCanIFindThis.html'>Locator</a><br><a href='https://lisagieng.github.io/ray/Subsections/Locater/Events/Events.html'>Events</a></p>");
+        }
+        if ($("#sel1").val() == "where" && $("#sel2").val() == "sustainable"){ // where/sustainable
+          $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Locater/WhereCanIFindThis/WhereCanIFindThis.html'>Locator</a><br><a href='https://lisagieng.github.io/ray/Subsections/Locater/Events/Events.html'>Events</a></p>");
+        }
+        if ($("#sel1").val() == "where" && $("#sel2").val() == "recycle"){ // where/recycle
+          $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Locater/WhereCanIFindThis/WhereCanIFindThis.html'>Locator</a></p>");
+        }
+        if ($("#sel1").val() == "where" && $("#sel2").val() == "educate"){ // where/educate
+          $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Locater/WhereCanIFindThis/WhereCanIFindThis.html'>Locator</a></p>");
+        }
   });
 });
 
