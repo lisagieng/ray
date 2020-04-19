@@ -6,3 +6,67 @@ footer {
   background-color: #2d3027;
   color: white;
 }
+.videoDesc {
+	height: 480px;
+	overflow: scroll;
+}
+
+.playlist {
+	width: 92%;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-left: 4%;
+	padding-bottom: 20px;
+}
+
+.videoList {
+	width: 2000px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.videoLink {
+	display: block;
+	width: 200px;
+	height: 150px;
+	float: left;
+	margin: 0;
+	padding: 10px;
+}
+
+.thumbnail {
+	width: 150px;
+}
+
+.thumbnail img {
+	width: 100%;
+	position: relative;
+	top: -13px;
+}
+
+.scrollArrows {
+	position:relative;
+	width: 100%;
+}
+
+.lArrow {
+	color: #fff	;
+	position: absolute;
+	background: #777;
+	padding: 15px;
+	top: -130px;
+	z-index: 99;
+	cursor: pointer;
+}
+
+.rArrow {
+	color: #fff;
+	position: absolute;
+	background: #777;
+	padding: 15px;
+	right: -25px;
+	top: -130px;
+	z-index:100;
+	cursor: pointer;
+}

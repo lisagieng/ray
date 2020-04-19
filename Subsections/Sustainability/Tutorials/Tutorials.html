@@ -8,9 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="css/tutorials.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/tutorials.js"></script>
   </head>
 
-<body class="wrapper">
+<body class="wrapper" onload="fillDescription()">
   <!-- logo -->
   <div class="container-fluid text-center pt-3 pb-3">
     <img src="img/logo_web_transparent.png" alt="Recycling & You" class="logo">
@@ -62,43 +64,63 @@
 
 
 
-  <div class="container-fluid pt-4">
+  <div id="container" class="container-fluid pt-4">
 	<div id="videoDesc" class="row">
-	  <div id="video" class="col-md-6">
-		<iframe width="720" height="480" src="https://www.youtube.com/embed/kZIrIQDf1nQ"></iframe>
+	  <div id="videoDiv" class="col-md-6">
+		<iframe id="video" width="720" height="480" src="https://youtube.com/embed/kZIrIQDf1nQ"></iframe>
 	  </div>
 	  <div id="description" class="col-md-6 bg-alt">
-		<h3>Sustainability in everyday life | Sustainability</h3>
-		<p>from ACCONIA
-		<br><br>
-		In our day to day life we face small actions that can make a big difference for the environment and for our pockets. For example, LED bulbs consume less energy than conventional bulbs, and can thus save about $220 per year. Even covering the pot while cooking saves 25% of the energy used to cook something without a lid. Fair trade products are also a better choice when shopping, as they are typically manufactured in eco-friendly production centers where workers earn fair wages and work in favorable conditions. Discover some best practices in this video.</p>
+		<h3 id="videoTitle"></h3>
+		<p id="videoDescription"></p>
 	  </div>
 	</div>
-	<div id="videoList" class="row pt-3">
-		<div id="thumb" class="col-md-2">
-			<img src="" alt="thumbnail">
-			<p>video 1</p>
+	
+	<div class="playlist">
+		<div class="videoList">
+			<div class="videoLink" onClick="document.getElementById('video').src='https://youtube.com/embed/_5r4loXPyx8?autoplay=1&rel=0&showinfo=0&autohide=1'; fillDescription();">
+			  <div class="thumbnail"><img src="http://img.youtube.com/vi/_5r4loXPyx8/0.jpg"></div>
+			</div>
+		  
+			<div class="videoLink" onClick="document.getElementById('video').src='https://youtube.com/embed/kZIrIQDf1nQ?autoplay=1&rel=0&showinfo=0&autohide=1'; fillDescription();">
+			  <div class="thumbnail"><img src="http://img.youtube.com/vi/kZIrIQDf1nQ/0.jpg"></div>
+			</div>
+
+			<div class="videoLink" onClick="document.getElementById('video').src='https://youtube.com/embed/5lOSIHWOp2I?autoplay=1&rel=0&showinfo=0&autohide=1'; fillDescription();">
+			  <div class="thumbnail"><img src="http://img.youtube.com/vi/5lOSIHWOp2I/0.jpg"></div>
+			</div>
+
+			<div class="videoLink" onClick="document.getElementById('video').src='https://youtube.com/embed/rmQby7adocM?autoplay=1&rel=0&showinfo=0&autohide=1'; fillDescription();">
+			  <div class="thumbnail"><img src="http://img.youtube.com/vi/rmQby7adocM/0.jpg"></div>
+			</div>
+
+			<div class="videoLink" onClick="document.getElementById('video').src='https://youtube.com/embed/-g21O7a9280?autoplay=1&rel=0&showinfo=0&autohide=1'; fillDescription();">
+			  <div class="thumbnail"><img src="http://img.youtube.com/vi/-g21O7a9280/0.jpg"></div>
+			</div>
+
+			<div class="videoLink" onClick="document.getElementById('video').src='https://youtube.com/embed/kXgELGBuMfA?autoplay=1&rel=0&showinfo=0&autohide=1'; fillDescription();">
+			  <div class="thumbnail"><img src="http://img.youtube.com/vi/kXgELGBuMfA/0.jpg"></div>
+			</div>
+			
+			<div class="videoLink" onClick="document.getElementById('video').src='https://youtube.com/embed/OaKBUr9wcNY?autoplay=1&rel=0&showinfo=0&autohide=1'; fillDescription();">
+			  <div class="thumbnail"><img src="http://img.youtube.com/vi/OaKBUr9wcNY/0.jpg"></div>
+			</div>
+			
+			<div class="videoLink" onClick="document.getElementById('video').src='https://youtube.com/embed/X7tzLezgws8?autoplay=1&rel=0&showinfo=0&autohide=1'; fillDescription();">
+			  <div class="thumbnail"><img src="http://img.youtube.com/vi/X7tzLezgws8/0.jpg"></div>
+			</div>
+			
+			<div class="videoLink" onClick="document.getElementById('video').src='https://youtube.com/embed/M0rDahrsHBQ?autoplay=1&rel=0&showinfo=0&autohide=1'; fillDescription();">
+			  <div class="thumbnail"><img src="http://img.youtube.com/vi/M0rDahrsHBQ/0.jpg"></div>
+			</div>
+			
+			<div class="videoLink" onClick="document.getElementById('video').src='https://youtube.com/embed/K9ojpJBSTw8?autoplay=1&rel=0&showinfo=0&autohide=1'; fillDescription();">
+			  <div class="thumbnail"><img src="http://img.youtube.com/vi/K9ojpJBSTw8/0.jpg"></div>\
+			</div>			
 		</div>
-		<div id="thumb" class="col-md-2">
-			<img src="" alt="thumbnail">
-			<p>video 2</p>
-		</div>
-		<div id="thumb" class="col-md-2">
-			<img src="" alt="thumbnail">
-			<p>video 3</p>
-		</div>
-		<div id="thumb" class="col-md-2">
-			<img src="" alt="thumbnail">
-			<p>video 4</p>
-		</div>
-		<div id="thumb" class="col-md-2">
-			<img src="" alt="thumbnail">
-			<p>video 5</p>
-		</div>
-		<div id="thumb" class="col-md-2">
-			<img src="" alt="thumbnail">
-			<p>video 6</p>
-		</div>
+	</div>
+	<div class="scrollArrows">
+		<div class="rArrow"><i class="fas fa-arrow-right"></i></div>
+		<div class="lArrow"><i class="fas fa-arrow-left"></i></div>
 	</div>
   </div>
 
@@ -128,14 +150,18 @@
       </div>
     </div>
   </footer>
+  
 
   <!-- JQuery -->
   <script
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
+	
+
+  <script src="https://kit.fontawesome.com/b99db08eb4.js" crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>  
   <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!-- JS things -->
