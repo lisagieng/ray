@@ -9,3 +9,14 @@
 #resultsTitle {
 	margin-top: 1%;
 }
+
+#sus_img{
+	width: 80%;
+	margin: auto;
+}
+#img_container{
+	text-align: right;
+}
+.bg-alt {
+  background-color: rgba(195,217,163,0.3);
+}

@@ -25,3 +25,14 @@
 #olBestWorst li {
 	background-color: #fbfff2;
 }
+#tableRow {
+	display: inline;
+}
+#tableRow img{
+	display: inline;
+	height: 100px;
+}
+#tableRow p{
+	padding-left: 5px;
+	display: inline;
+}
