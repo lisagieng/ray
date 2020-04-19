@@ -29,68 +29,7 @@ function initMap() {
 	  handleLocationError(false, infoWindow, map.getCenter());
 	}
 	
-	service = new google.maps.places.PlacesService(map);
-	
-	/*if(document.getElementById("compost heap").checked){
-		var request = {
-			query: 'compost heap',
-			fields: ['name', 'geometry'],
-		};
-		service.findPlaceFromQuery(request, function(results, status) {
-          if (status === google.maps.places.PlacesServiceStatus.OK) {
-            for (var i = 0; i < results.length; i++) {
-              createMarker(results[i]);
-            }
-
-            map.setCenter(results[0].geometry.location);
-          }
-        });
-	}
-	if(document.getElementById("electronics recycling").checked) {
-		var request = {
-			query: 'electronics recycling',
-			fields: ['name', 'geometry'],
-		};
-		service.findPlaceFromQuery(request, function(results, status) {
-          if (status === google.maps.places.PlacesServiceStatus.OK) {
-            for (var i = 0; i < results.length; i++) {
-              createMarker(results[i]);
-            }
-
-            map.setCenter(results[0].geometry.location);
-          }
-        });
-	}
-	if(document.getElementById("glass recycling").checked) {
-		var request = {
-			query: 'glass recycling',
-			fields: ['name', 'geometry'],
-		};	
-		service.findPlaceFromQuery(request, function(results, status) {
-          if (status === google.maps.places.PlacesServiceStatus.OK) {
-            for (var i = 0; i < results.length; i++) {
-              createMarker(results[i]);
-            }
-			
-            map.setCenter(results[0].geometry.location);
-          }
-        });
-	}
-	if(document.getElementById("ink cartridges").checked){
-		var request = {
-			query: 'ink cartridge recycling',
-			fields: ['name', 'geometry'],
-		};
-		service.findPlaceFromQuery(request, function(results, status) {
-          if (status === google.maps.places.PlacesServiceStatus.OK) {
-            for (var i = 0; i < results.length; i++) {
-              createMarker(results[i]);
-            }
-			
-            map.setCenter(results[0].geometry.location);
-          }
-        });		
-	}*/
+	service = new google.maps.places.PlacesService(map);	
 	
 	
 	var input = document.getElementById('pac-input');
@@ -157,5 +96,26 @@ function createMarker(place) {
     infowindow.setContent(place.name);
     infowindow.open(map, this);
   });
+}
+
+function checkBoxes() {
+		//*********************************************************
+	//CHECKBOXES TO TOGGLE PLACES ON/OFF
+	
+	var str = "";
+	console.log(document.getElementById("compost heap"));
+	
+	$("input:checkbox[name=checkGroup]:checked").each(function(){
+		if(str == ""){
+			str += ($(this)[0].id);
+		}else{
+			str += (" OR " + $(this)[0].id);
+		}
+	});
+	console.log(str);
+	
+	
+	//*********************************************************
+
 }
 
