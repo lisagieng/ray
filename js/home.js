@@ -32,16 +32,16 @@ $(function () {
 
     ////////// HOW
     if ($("#sel1").val() == "how" && $("#sel2").val() == "planet"){ // how/planet
-      $("#results").html("<p>how/planet</p>");
+      $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/Overview.html'>Sustainability</a><br><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/Tutorials/Tutorials.html'>Tutorials</a><br><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/BestAndWorstOf/BestAndWorstOf.html'>Best & Worst Companies</a></p>");
     }
     if ($("#sel1").val() == "how" && $("#sel2").val() == "sustainable"){ // how/sustainable
-      $("#results").html("<p>how/sustainable</p>");
+      $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/BeginnersGuide/BeginnersGuide.html'>A Beginner's Guide to Sustainability</a><br><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/Tutorials/Tutorials.html'>Tutorials</a></p>");
     }
-    if ($("#sel1").val() == "how" && $("#sel2").val() == "recycle"){ // how/educate
-      $("#results").html("<p>how/educate</p>");
+    if ($("#sel1").val() == "how" && $("#sel2").val() == "recycle"){ // how/recycling
+      $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Recycling/Overview/Overview.html'>Recycling</a><br><a href='https://lisagieng.github.io/ray/Subsections/Recycling/IsThisRecyclable/IsThisRecyclable.html'>Is This Item Recyclable?</a></p>");
     }
     if ($("#sel1").val() == "how" && $("#sel2").val() == "educate"){ // how/educate
-      $("#results").html("<p>how/educate</p>");
+      $("#results").html("<p><a href='https://lisagieng.github.io/ray/Subsections/Sustainability/Overview.html'>Sustainability</br><a href='https://lisagieng.github.io/ray/Subsections/Recycling/Overview/Overview.html'>Recycling</a><br><a href='https://lisagieng.github.io/ray/Subsections/KidsPlace/Overview/Overview.html'>Educating Children</a><br><a href='https://lisagieng.github.io/ray/Subsections/AdditionalResources.html'>Additional Resources</a></p>");
     }
 
     ////////// WHERE
