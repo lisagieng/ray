@@ -2,6 +2,10 @@
 	background-color: rgba(195,217,163,0.3);
 }
 
+.logoBestWorst {
+	width: 100px;
+}
+
 #title {
 	margin-left: 1%;
 }
